@@ -15,9 +15,9 @@
   background: white;
   box-shadow: 1px 1px 29px 0px rgb(100, 100, 99);
   margin: 5px;
-  width: 80%;
+  width: 50%;
   display: column;
-  border-radius: 50px 50px 0px 11px;
+  border-radius: 17px 17px 17px 17px;
 }
 
 .container-item-match {
@@ -56,12 +56,17 @@
   display: flex;
   justify-content: center;
   margin: 1rem;
-  width: 100%;
+  width: 90%;
+}
+
+.container-item-match p{
+ color: rgb(0, 0, 0);
 }
 
 img {
   width: 100px;
   height: 100px;
+  margin-left: 34px;
 }
 
 .vs {
@@ -75,7 +80,7 @@ img {
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  width: 100%;
+  width: 40%;
   margin: 10px;
 }
 

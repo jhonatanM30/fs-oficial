@@ -52,11 +52,13 @@ export const Content = () => {
                 <div className="container-item-date">Miercoles 24-Agosto-2021 - Amistoso</div>
                 <div className="container-item-match">
                     <div className="item-match">
-                        <img src={imgNac} alt="Parliament Hill"  />
+                    <img src={imgNac} alt="Parliament Hill"  />
+                        <p>Club Atlético Nacional</p>                       
                     </div>
-                    <div className="item-match vs"> <span>VS</span> </div>
+                    <div className="item-match vs"> <span>-</span> </div>
                     <div className="item-match">
-                    <img src={imgBoca} alt="Parliament Hill" />
+                    <img src={imgBoca} alt="Parliament Hill"  />
+                        <p>Club Atlético Boca Juniors</p>                       
                     </div>                    
                 </div>              
             </div>
