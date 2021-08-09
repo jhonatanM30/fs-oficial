@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.cont-menu {
+  background: white;
+  box-shadow: 1px 1px 29px 0px rgb(100, 100, 99);
+  margin: 5px;
+  width: 80%;
+  display: column;
+  border-radius: 50px 50px 0px 11px;
+}
+
+.container-item-match {
+  display: flex;   
+  justify-content: center;
+}
+
+.container-item-menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid;  
+  list-style: none;
+}
+
+.container-menu-item {
+  margin: 0 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content; /* Para que al hacer responsive no se corten las palabras*/
+}
+
+.menu-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.menu-link:hover {
+  color: rgb(0, 180, 45);
+  transition: 0.5s;
+}
+
+.container-item-match {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.vs {
+  padding: 2rem;
+  font-size: 30px;
+}
+
+.container-item-date {
+  display: flex;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .cont-menu {
+    margin: 5px;
+    width: 100%;
+  }
+  .container-menu-item {     
+    margin: 0 2px;
+    line-height: 40px;
+  }
+
+  .menu-link {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .container-item-date {   
+    font-size: 10px;
+    font-weight: 500;    
+  }
+  .vs {
+    padding: 2rem;
+    font-size: 15px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}

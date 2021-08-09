@@ -1,0 +1,311 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.btn-watch-profile {
+  display: inline-block;
+  border-radius: 16px;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.btn-watch-profile:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 166, 0);
+}
+
+.btn-profile,
+.btn-theme,
+.btn-sound {
+  border: 1px;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #f8ffbc 0,
+    #e8ffba 16.67%,
+    #d8fdb8 33.33%,
+    #c9f2b5 50%,
+    #bbe7b2 66.67%,
+    #aeddaf 83.33%,
+    #a3d3ac 100%
+  );
+}
+
+.btn-profile {
+  border-radius: 100px;
+  color: #8d8d8d;
+  font-size: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+.btn-sound,
+.btn-theme {
+  border-radius: 100px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.btn-theme:hover,
+.btn-sound:hover {
+  background: rgb(255, 166, 0);
+  transition: 0.6s;
+}
+
+
+.desc-profile {
+  color: rgb(0, 0, 0);
+  font-weight: 645;
+  font-size: 18px;
+}
+
+.item-profile {
+  display: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.item-profile .chill-nav-item {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.item-options {
+  margin-left: auto;
+}
+
+.item-info {
+  display: none;
+}
+
+.item-info-visible {
+  border-radius: 51px;
+  background: white;
+  box-shadow: 1px 1px 29px 0px #191818;
+  margin: 15px;
+  width: 25%;
+  display: block;
+  animation: animInfoProfile 1s ease 0s 1 alternate-reverse backwards;
+}
+.item-info-visible-dark{
+  box-shadow: 1px 1px 29px 0px #989797;
+  transition: all 0.25s linear;
+}
+
+
+
+
+@keyframes animInfoProfile {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 166, 0);
+  font-size: 25px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.nav-banner {
+  width: 70%;
+  display: block;
+}
+
+.nav-banner-title:before {
+  content: "";
+  animation: myAnin 15s infinite linear;
+}
+
+.nav-banner-none {
+  display: none;
+}
+
+@keyframes myAnin {
+  0% {
+    font-size: 5px;
+    content: "Bienvenido...";
+  }
+
+  20% {
+    content: "Vamos equipo...";
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+
+  40% {
+    content: "Llego el dia...";
+    font-size: 25px;
+    color: rgb(255, 166, 0);
+  }
+
+  60% {
+    font-size: 35px;
+    content: "Podemos Ganar...";
+    color: rgb(0, 0, 0);
+  }
+
+  100% {
+    font-size: 45px;
+    content: "G O O O L !";
+    color: rgb(255, 166, 0);
+  }
+}
+
+.nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.nav-item {
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+
+.dark-mode   {
+  transition: all 0.7s linear;
+  background-color: black;
+}
+
+.white-mode   {
+  transition: all 0.4s linear;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+
+  .nav-item {
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .item-profile .chill-nav-item {
+    padding-top: 0;
+  }
+  .btn-profile {
+    border-radius: 100px;
+    color: #8d8d8d;
+    font-size: 50px;
+    width: 75px;
+    height: 75px;
+  }
+  .btn-watch-profile {
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    width: 40%;
+    margin-top: 0.2rem;
+  }
+  .nav-banner {
+    width: 100%;
+  }
+
+  @keyframes myAnin {
+    0% {
+      font-size: 5px;
+      content: "Bienvenido...";
+    }
+
+    20% {
+      content: "Vamos equipo...";
+      font-size: 10px;
+      color: rgb(0, 0, 0);
+    }
+
+    40% {
+      content: "Llego el dia...";
+      font-size: 15px;
+      color: rgb(255, 166, 0);
+    }
+
+    60% {
+      font-size: 20px;
+      content: "Podemos Ganar...";
+      color: rgb(0, 0, 0);
+    }
+
+    100% {
+      font-size: 25px;
+      content: "G O O O L !";
+      color: rgb(255, 166, 0);
+    }
+  }
+
+  .item-info-visible {
+    border-radius: 30px;
+    margin: 1px;
+    width: 100%;
+    display: block;
+    animation: animInfoProfile 1s ease 0s 1 alternate-reverse backwards;
+    padding: 1rem;
+  }
+
+  .desc-profile {
+    font-size: 14px;
+  }
+  .text-profile {
+    font-size: 10px;
+  }
+  .item-info h2 {   
+    color: rgb(0, 0, 0);
+    font-size: 20px;    
+    text-transform: uppercase;
+  }
+
+  .item-options {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+  }
+  .item-options .chill-nav-item {
+    padding: 0.4rem;      
+  }
+}

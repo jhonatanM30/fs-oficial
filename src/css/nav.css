@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.nav {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.nav-menu-link,
+.logo {
+  color: rgb(255, 166, 0);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;  
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font: bold 16px sans-serif;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content; /* Para que al hacer responsive no se corten las palabras*/
+}
+
+.nav-menu-link:hover, .nav-menu-link_active {
+  background-color: rgb(0, 0, 0);
+  border: 1px;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #f8ffbc 0,
+    #e8ffba 16.67%,
+    #d8fdb8 33.33%,
+    #c9f2b5 50%,
+    #bbe7b2 66.67%,
+    #aeddaf 83.33%,
+    #a3d3ac 100%
+  );
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 3px #ddf7c6;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.nav-toogle {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(255, 166, 0);
+  height: 80px;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    height: 60px;    
+  }
+
+  .nav-menu-link {
+    color: rgb(0, 0, 0); 
+  }
+  .logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    left: 100%;
+    margin-right: 20px;
+    background-color: rgb(255, 166, 0);
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    align-items: center;
+    padding: 20px, 0;
+    height: calc(
+      100% - 60px
+    ); /* El 100% de la pagina menos el 60px del header*/
+    overflow-y: auto; /* Ponga el scroll cuando sea necesario*/    
+    transition: 0.4s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover, .nav-menu-link_active {
+    background-image: none;
+    color: rgb(255, 241, 241);
+    transition: 0.5s;
+  }
+
+  .nav-toogle {
+    height: 60px;    
+    display: block;
+  }
+
+  .nav-menu_visible{
+    left: 0;   
+  }
+
+}
