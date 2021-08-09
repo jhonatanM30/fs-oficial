@@ -99,6 +99,12 @@
   display: block;
   animation: animInfoProfile 1s ease 0s 1 alternate-reverse backwards;
 }
+
+.item-info li{
+  list-style:none; 
+  padding-top: 1rem;
+}
+
 .item-info-visible-dark{
   box-shadow: 1px 1px 29px 0px #989797;
   transition: all 0.25s linear;
