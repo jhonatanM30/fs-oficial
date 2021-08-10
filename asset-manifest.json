@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fs-oficial/static/css/main.70a509ce.chunk.css",
+    "main.js": "/fs-oficial/static/js/main.c9f316ee.chunk.js",
+    "main.js.map": "/fs-oficial/static/js/main.c9f316ee.chunk.js.map",
+    "runtime-main.js": "/fs-oficial/static/js/runtime-main.d4e9a58c.js",
+    "runtime-main.js.map": "/fs-oficial/static/js/runtime-main.d4e9a58c.js.map",
+    "static/css/2.d45d6843.chunk.css": "/fs-oficial/static/css/2.d45d6843.chunk.css",
+    "static/js/2.9a6775f7.chunk.js": "/fs-oficial/static/js/2.9a6775f7.chunk.js",
+    "static/js/2.9a6775f7.chunk.js.map": "/fs-oficial/static/js/2.9a6775f7.chunk.js.map",
+    "index.html": "/fs-oficial/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/fs-oficial/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.70a509ce.chunk.css.map": "/fs-oficial/static/css/main.70a509ce.chunk.css.map",
+    "static/js/2.9a6775f7.chunk.js.LICENSE.txt": "/fs-oficial/static/js/2.9a6775f7.chunk.js.LICENSE.txt",
+    "static/media/Atletico-nacional.a24331fd.jpg": "/fs-oficial/static/media/Atletico-nacional.a24331fd.jpg",
+    "static/media/boca.afa55760.png": "/fs-oficial/static/media/boca.afa55760.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4e9a58c.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.9a6775f7.chunk.js",
+    "static/css/main.70a509ce.chunk.css",
+    "static/js/main.c9f316ee.chunk.js"
+  ]
+}
