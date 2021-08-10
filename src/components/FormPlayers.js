@@ -9,7 +9,7 @@ const initialForm = {
     img: '',
 }
 
-export const CrudForm = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
+export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
       
     const [formState, setFormState] = useState(initialForm);
     const { id, name, club, img } = formState;

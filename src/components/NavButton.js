@@ -1,4 +1,7 @@
 import React from "react";
+import { 
+  Link
+} from "react-router-dom";
 import "../css/nav.css";
 
 export const NavButton = () => {
@@ -26,7 +29,7 @@ export const NavButton = () => {
       </button>
       <ul className="nav-menu">
         <li className="nav-menu-item">
-          <a
+          <Link to="/"
              href="https://webcode.tools/generators/css/keyframe-animation"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -34,51 +37,47 @@ export const NavButton = () => {
             title={tooltipAll[0]}
           >
             Inicio
-          </a>
+          </Link>
         </li>
         <li className="nav-menu-item">
-          <a
-             href="https://webcode.tools/generators/css/keyframe-animation"
+          <Link to="/equipos"             
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[1]}
           >
             Gestionar Equipos
-          </a>
+          </Link>
         </li>
         <li className="nav-menu-item">
-          <a
-             href="https://webcode.tools/generators/css/keyframe-animation"
+          <Link to="/jugadores"            
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[2]}
           >
             Gestionar Jugadores
-          </a>
+          </Link>
         </li>
         <li className="nav-menu-item">
-          <a
-             href="https://webcode.tools/generators/css/keyframe-animation"
+          <Link to="/partidos"              
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[3]}
           >
             Gestionar Partidos
-          </a>
+          </Link>
         </li>
         <li className="nav-menu-item">
-          <a
-            href="https://webcode.tools/generators/css/keyframe-animation"
+          <Link to="/Noticias"              
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[4]}
           >
             Ver Estadisticas
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

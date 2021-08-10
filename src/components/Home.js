@@ -1,9 +1,9 @@
 import React from "react";
-import "../css/content.css";
+import "../css/home.css";
 import imgNac from "../common/img/Atletico-nacional.jpg";
 import imgBoca from "../common/img/boca.png";
 
-export const Content = () => {
+export const Home = () => {
     return (
         <div className="cont">
             <div className="cont-menu">

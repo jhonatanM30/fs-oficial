@@ -24,7 +24,7 @@ export const helpHttp = () => {
                     : Promise.reject({
                         err: true,
                         status: resp.status || "00",
-                        statusText: resp.statusText || "Ocurrio un error",
+                        statusText: resp.statusText || "Ocurrio un error",                       
                     }
                     ))
             .catch((err) => err);

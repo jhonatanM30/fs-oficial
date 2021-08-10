@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/table.css'
 
-const CrudTableRow = ({ player, setdataToEdit, deleteData }) => {    
+const ListPlayersItem = ({ player, setdataToEdit, deleteData }) => {    
     let { id, name, club, img } = player;
     return (
         <div className="card d-flex flex-column justify-content-between ml-2">
@@ -22,4 +22,4 @@ const CrudTableRow = ({ player, setdataToEdit, deleteData }) => {
     )
 };
 
-export default CrudTableRow;
+export default ListPlayersItem;

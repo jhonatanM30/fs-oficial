@@ -1,9 +1,9 @@
 import React from 'react';
-import CrudTableRow from './CrudTableRow';
+import ListPlayersItem from './ListPlayersItem';
 import '../css/table.css'
 
 
-export const CrudTable = ({ data, setdataToEdit, deleteData }) => {   
+export const ListPlayers = ({ data, setdataToEdit, deleteData }) => {   
     return (        
         <div className="d-flex flex-wrap">           
             {
@@ -12,7 +12,7 @@ export const CrudTable = ({ data, setdataToEdit, deleteData }) => {
                         <h3>No hay datos</h3>
                     </div> :
                     data.map(player =>
-                        <CrudTableRow
+                        <ListPlayersItem
                             key={player.id}
                             player={player}
                             setdataToEdit={setdataToEdit}
