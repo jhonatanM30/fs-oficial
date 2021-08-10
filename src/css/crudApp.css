@@ -1,14 +1,17 @@
-.main-container{
-    display: column;
-    flex-direction: column;
-    min-height: 100vh;  
-         
+.main-container {
+  display: column;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("https://as.com/tikitakas/imagenes/2020/02/11/fotorrelato/1581440217_118084_1581440316_album_normal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
