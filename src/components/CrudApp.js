@@ -10,7 +10,7 @@ import '../css/crudApp.css';
 import { Nav } from './Nav';
 import { Home } from './Home';
 import { Footer } from './Footer';
-import { PlayerList } from './PlayerList';
+import { Player } from './Player';
 
 const CrudApp = () => {
 
@@ -23,7 +23,7 @@ const CrudApp = () => {
                         <Home />
                     </Route>
                     <Route exact path="/jugadores">
-                        <PlayerList />
+                        <Player />
                     </Route>
                 </Switch>
                 <Footer></Footer>

@@ -1,66 +1,23 @@
 import React from "react";
+import { 
+    Link
+  } from "react-router-dom";
 import "../css/home.css";
-import imgNac from "../common/img/Atletico-nacional.jpg";
-import imgBoca from "../common/img/boca.png";
 
 export const Home = () => {
     return (
         <div className="cont">
-            <div className="cont-menu">
-                <ul className="container-item-menu">
-                    <li className="container-menu-item">                        
-                        <a
-                            href="https://webcode.tools/generators/css/keyframe-animation"
-                            className="menu-link"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                        >
-                            Partidos
-                        </a>                        
-                    </li>
-                    <li className="container-menu-item">
-                        <a
-                            href="https://webcode.tools/generators/css/keyframe-animation"
-                            className="menu-link"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                        >
-                             Noticias
-                        </a>
-                    </li>
-                    <li className="container-menu-item">
-                        <a
-                            href="https://webcode.tools/generators/css/keyframe-animation"
-                            className="menu-link"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                        >
-                            Tabla de posiciones
-                        </a>
-                    </li>
-                    <li className="container-menu-item">
-                        <a
-                            href="https://webcode.tools/generators/css/keyframe-animation"
-                            className="menu-link"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="bottom"
-                        >
-                            Goleadores
-                        </a>
-                    </li>
-                </ul>
-                <div className="container-item-date">Miercoles 24-Agosto-2021 - Amistoso</div>
-                <div className="container-item-match">
-                    <div className="item-match">
-                    <img src={imgNac} alt="Parliament Hill"  />
-                        <p>Club Atlético Nacional</p>                       
-                    </div>
-                    <div className="item-match vs"> <span>-</span> </div>
-                    <div className="item-match">
-                    <img src={imgBoca} alt="Parliament Hill"  />
-                        <p>Club Atlético Boca Juniors</p>                       
-                    </div>                    
-                </div>              
+            <div className="hero">
+                <div className="container">
+                    <h1>Bienvenido A <span>La Liga De Fútbol</span></h1>
+                    <p>En la plataforma de la liga de fútbol te presentamos lo mejor para ti y tu equipo, visita las diferentes opciones y hazte un gol actualizando la información de tu interes</p>
+                    <button className="arrow">
+                        <i className="fas fa-arrow-down fa-5x"></i>                        
+                    </button> <br></br> 
+                    <Link to="/jugadores" className="btn-go">
+                        Gol de la fecha ⚽                      
+                    </Link>                     
+                </div>
             </div>
         </div>
     );

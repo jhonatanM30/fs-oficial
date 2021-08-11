@@ -4,7 +4,7 @@ import { ListPlayers } from './ListPlayers';
 import { helpHttp } from '../helpers/helpHttp';
 
 
-export const PlayerList = () => {
+export const Player = () => {
     const [dataPlayer, setdataPlayer] = useState([])
     const [dataToEdit, setdataToEdit] = useState(null)
 
@@ -41,7 +41,8 @@ export const PlayerList = () => {
             }, 300);
     }
     return (
-        <div>                          
+        <div>             
+                                
             <ListPlayers
                 data={dataPlayer}
                 setdataToEdit={setdataToEdit}

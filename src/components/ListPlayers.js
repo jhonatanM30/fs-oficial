@@ -6,6 +6,7 @@ import '../css/listPlayers.css'
 export const ListPlayers = ({ data, setdataToEdit, deleteData }) => {
     return (
         <div className="cards">
+             <div className="ban-title">Lista de Jugadores</div>
             {
                 data.length < 1 ?
                     <div className="ban-error">No Hay Jugadores Guardados.</div>

@@ -4,7 +4,7 @@ import '../css/listPlayers.css'
 const ListPlayersItem = ({ player, setdataToEdit, deleteData }) => {
     let { id, name, club, img } = player;
     return (
-        <div className="container-card-item">
+        <div className="container-card-item">                       
             <div className="card">
                 <div className="imgBx">
                 <img src={img} className="card-img-top" alt="..." />
@@ -19,8 +19,8 @@ const ListPlayersItem = ({ player, setdataToEdit, deleteData }) => {
                         <h3>Dorsal :</h3>
                         <span>{ `# ${id}` }</span>                        
                     </div>                    
-                    <button >Editar</button>
-                    <button>Eliminar</button>
+                    <button onClick={() => setdataToEdit(player)}>Editar</button>
+                    <button onClick={() => deleteData(id)}>Eliminar</button>
                 </div>
             </div>
         </div>

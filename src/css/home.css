@@ -8,107 +8,95 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 0px;
+  height: 100vh;
+
 }
 
-.cont-menu {
-  background: white;
-  box-shadow: 1px 1px 29px 0px rgb(100, 100, 99);
-  margin: 5px;
-  width: 50%;
-  display: column;
-  border-radius: 17px 17px 17px 17px;
-}
-
-.container-item-match {
-  display: flex;   
-  justify-content: center;
-}
-
-.container-item-menu {
+.hero{
   display: flex;
-  justify-content: center;
-  border-bottom: solid;  
-  list-style: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  position: relative;
 }
 
-.container-menu-item {
-  margin: 0 5px;
-  line-height: 80px;
-  text-transform: uppercase;
-  width: max-content; /* Para que al hacer responsive no se corten las palabras*/
+.hero h1 {
+  font-size: 50px;
+  margin: -20px 0 20px;
+  color: rgb(255, 255, 255);
+}
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
 }
 
-.menu-link {
-  color: rgb(0, 0, 0);
+.container .arrow{
+ background-color: transparent;
+ border: none;
+ color: #1DBF73; 
+ width: auto; 
+ height: auto; 
+ font-size: 10px;
+ animation: myAnim 7s linear 0ms infinite normal both;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+.container .btn-go{
   text-decoration: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;    
+    font-weight: 800;
+    color: #111;
+    opacity: 0.8;              
 }
 
-.menu-link:hover {
-  color: rgb(0, 180, 45);
+.container .btn-go:hover{
+  background-color:  #1DBF73;
   transition: 0.5s;
 }
 
-.container-item-match {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-  width: 90%;
+.container span{
+  color: #1DBF73;
+  font-size: 50px;
+}
+.container span:hover{
+  color: #fff;
+  transition: 0.5s;
 }
 
-.container-item-match p{
- color: rgb(0, 0, 0);
+.hero h1:hover{
+  color: #1DBF73;
+  transition: 0.5s;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-  margin-left: 34px;
-}
 
-.vs {
-  padding: 2rem;
-  font-size: 30px;
-}
-
-.container-item-date {
-  display: flex;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  width: 40%;
-  margin: 10px;
-}
-
-@media (max-width: 768px) {
-  .cont-menu {
-    margin: 5px;
-    width: 100%;
-  }
-  .container-menu-item {     
-    margin: 0 2px;
-    line-height: 40px;
-  }
-
-  .menu-link {
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .container-item-date {   
-    font-size: 10px;
-    font-weight: 500;    
-  }
-  .vs {
-    padding: 2rem;
-    font-size: 15px;
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-  }
-}

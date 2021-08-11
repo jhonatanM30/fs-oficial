@@ -2,10 +2,11 @@
   display: column;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("https://www.velozmente.cl/blog/wp-content/uploads/2020/04/pagina-web-de-futbol.jpg");
+  background-image: url("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/02/23/14878697535142.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -2;
+  z-index: -2; 
+  
 }
 
 main {

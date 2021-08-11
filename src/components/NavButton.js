@@ -76,7 +76,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[4]}
           >
-            Ver Estadisticas
+            Noticias
           </Link>
         </li>
       </ul>
