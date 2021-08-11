@@ -41,8 +41,7 @@ export const PlayerList = () => {
             }, 300);
     }
     return (
-        <div>              
-            
+        <div>                          
             <ListPlayers
                 data={dataPlayer}
                 setdataToEdit={setdataToEdit}

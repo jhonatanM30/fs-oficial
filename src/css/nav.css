@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between; 
   width: 100%; 
+  height: auto;
 }
 
 .nav-menu-link,
@@ -25,7 +26,7 @@
   font-size: 30px;
   font-weight: bold;
   padding: 0 40px;
-  line-height: 80px;
+  line-height: 50px;
 }
 
 .nav-menu {
@@ -37,7 +38,7 @@
 .nav-menu-item {
   font: bold 16px sans-serif;
   margin: 0 10px;
-  line-height: 80px;
+  line-height: 50px;
   text-transform: uppercase;
   width: max-content; /* Para que al hacer responsive no se corten las palabras*/
 }
