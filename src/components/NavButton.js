@@ -18,6 +18,7 @@ export const NavButton = () => {
     navMenu.classList.toggle("nav-menu_visible");
   };
 
+
   return (
     <nav className="nav">
       <a  href="https://webcode.tools/generators/css/keyframe-animation" className="logo">

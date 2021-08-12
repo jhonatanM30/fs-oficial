@@ -6,6 +6,7 @@
 }
 
 .nav { 
+  background-color:rgb(0, 0, 0);
   display: flex;
   justify-content: space-between; 
   width: 100%; 
@@ -23,12 +24,20 @@
   font-weight: 600;  
 }
 
+
 .logo {
   font-size: 30px;
   font-weight: bold;
   padding: 0 40px;
   line-height: 50px;
+  transition: 0.5s;
 }
+
+.logo:hover{
+  color: #9bdc28;
+}
+
+a:active { color: lime; }
 
 .nav-menu {
   display: flex;

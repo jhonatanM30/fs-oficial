@@ -7,7 +7,7 @@
 .btn-watch-profile {
   display: inline-block;
   border-radius: 16px;
-  background-color: rgb(255, 166, 0);
+  background: #9bdc28;
   border: none;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -27,7 +27,7 @@
 
 
 .btn-profile {
-  color: #8d8d8d;
+  color: #000000;
   font-size: 70px;
   width: 100px;
   height: 100px;
@@ -89,12 +89,15 @@
 }
 
 .item-info-visible {
-  border-radius: 51px;
-  background: white;
-  box-shadow: 1px 1px 29px 0px #191818;
-  margin: 15px;
-  width: 25%;
-  display: block;
+  background: #fff;
+  opacity: 0.7;
+  border-radius: 20px;
+  margin: 5% auto;
+  width: auto;  
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   animation: animInfoProfile 1s ease 0s 1 alternate-reverse backwards;
 }
 
@@ -147,51 +150,6 @@ h2 {
   font-size: 25px;
   font-weight: 650;
   text-transform: uppercase;
-}
-
-.nav-banner {
-  width: 70%;
-  display: block;
-}
-
-.nav-banner-title:before {
-  content: "";
-  animation: myAnin 15s infinite linear;
-}
-
-.nav-banner-none {
-  display: none;
-}
-
-@keyframes myAnin {
-  0% {
-    font-size: 5px;
-    content: "Bienvenido...";
-  }
-
-  20% {
-    content: "Vamos equipo...";
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-  }
-
-  40% {
-    content: "Llego el dia...";
-    font-size: 25px;
-    color: rgb(255, 166, 0);
-  }
-
-  60% {
-    font-size: 35px;
-    content: "Podemos Ganar...";
-    color: rgb(0, 0, 0);
-  }
-
-  100% {
-    font-size: 45px;
-    content: "G O O O L !";
-    color: rgb(255, 166, 0);
-  }
 }
 
 .nav-container {
@@ -248,41 +206,7 @@ h2 {
     width: 40%;
     margin-top: 0.2rem;
   }
-  .nav-banner {
-    width: 100%;
-  }
-
-  @keyframes myAnin {
-    0% {
-      font-size: 5px;
-      content: "Bienvenido...";
-    }
-
-    20% {
-      content: "Vamos equipo...";
-      font-size: 10px;
-      color: rgb(0, 0, 0);
-    }
-
-    40% {
-      content: "Llego el dia...";
-      font-size: 15px;
-      color: rgb(255, 166, 0);
-    }
-
-    60% {
-      font-size: 20px;
-      content: "Podemos Ganar...";
-      color: rgb(0, 0, 0);
-    }
-
-    100% {
-      font-size: 25px;
-      content: "G O O O L !";
-      color: rgb(255, 166, 0);
-    }
-  }
-
+  
   .item-info-visible {
     border-radius: 30px;
     margin: 1px;

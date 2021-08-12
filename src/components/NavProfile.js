@@ -60,16 +60,13 @@ export const NavProfile = () => {
   };
 
   const display = (e) => {
-    const divInfo = document.querySelector(".item-info");
-    const divBanner = document.querySelector(".nav-banner");
+    const divInfo = document.querySelector(".item-info");    
     if (stateInfo === "invisible") {
-      setstateInfo("visble");
-      divBanner.classList.add("nav-banner-none");
+      setstateInfo("visble");    
       divInfo.classList.add("item-info-visible");
     } else {
       setstateInfo("invisible");
-      divInfo.classList.remove("item-info-visible");
-      divBanner.classList.remove("nav-banner-none");
+      divInfo.classList.remove("item-info-visible");   
     }
   };
 
@@ -93,10 +90,7 @@ export const NavProfile = () => {
             <i className="far fa-share-square"></i>
           </button>
         </div>
-      </div>
-      <div className="nav-banner">
-        <h2 className="nav-banner-title"> </h2>
-      </div>
+      </div>      
       <div className="nav-item item-info">
         <ul>
           <h2>Perfil</h2>

@@ -15,8 +15,14 @@ export const Home = () => {
                         <i className="fas fa-arrow-down fa-5x"></i>                        
                     </button> <br></br> 
                     <Link to="/jugadores" className="btn-go">
-                        Gol de la fecha ⚽                      
-                    </Link>                     
+                        Lo mejor de la fecha 📺                      
+                    </Link>  
+                    <Link to="/jugadores" className="btn-go">
+                       Gol de la fecha ⚽                      
+                    </Link>  
+                    <Link to="/jugadores" className="btn-go">
+                       Jugador de la fecha 🥇                      
+                    </Link>                 
                 </div>
             </div>
         </div>

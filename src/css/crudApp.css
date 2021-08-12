@@ -2,17 +2,13 @@
   display: column;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/02/23/14878697535142.jpg");
+  background-image: url("../common/images/home1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2; 
-  
 }
 
 main {
   flex-grow: 1;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}

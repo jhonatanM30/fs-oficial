@@ -7,6 +7,7 @@ import { helpHttp } from '../helpers/helpHttp';
 export const Player = () => {
     const [dataPlayer, setdataPlayer] = useState([])
     const [dataToEdit, setdataToEdit] = useState(null)
+    
 
     let api = helpHttp();
     let url = 'http://localhost:5000/players'
@@ -42,7 +43,11 @@ export const Player = () => {
     }
     return (
         <div>             
-                                
+              <FormPlayers
+                createData={createData}
+                updateData={updateData}
+                dataToEdit={dataToEdit}
+                setdataToEdit={setdataToEdit} />                 
             <ListPlayers
                 data={dataPlayer}
                 setdataToEdit={setdataToEdit}
