@@ -24,10 +24,10 @@ const initialForm = {
 export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
 
   const [formState, setFormState] = useState(initialForm);
- 
+
   useEffect(() => {
-    if (dataToEdit) {            
-      setFormState(dataToEdit)     
+    if (dataToEdit[0]) {            
+      setFormState(dataToEdit[0])     
       openModal(); 
     } else {
       setFormState(initialForm)
@@ -61,6 +61,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
 
   const handleReset = () => {
     setFormState(initialForm);  
+    setdataToEdit([null, false])
   }
 
   const openModal = () => {
@@ -70,7 +71,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
 
   return (
     <div className="container">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#openModal" >
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#openModal" onClick={handleReset}>
         <i className="fas fa-user-plus" /> Registrar Jugador
       </button>
       <div className="modal fade" id="openModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -167,7 +168,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
             <div className="modal-footer">
               <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
                 {
-                  dataToEdit ? "Actualizar" : "Enviar"
+                  formState.id ? "Actualizar" : "Enviar"
                 }                
               </button>
               <button type="reset" onClick={handleReset} className="btn btn-secondary">Limpiar</button>

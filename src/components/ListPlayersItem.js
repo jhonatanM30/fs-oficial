@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/listPlayers.css'
 
-const ListPlayersItem = ({ player, setdataToEdit, deleteData }) => {
+const ListPlayersItem = ({ player, setdataToEdit, deleteData, dataToEdit }) => {    
     return (
         <div className="container-card-item">                              
             <div className="card">                
@@ -43,7 +43,7 @@ const ListPlayersItem = ({ player, setdataToEdit, deleteData }) => {
                         <h3>Tarjetas Rojas :</h3>
                         <span>{player.player_red_cards}</span>                       
                     </div>                    
-                    <button onClick={() => setdataToEdit(player)}>Editar</button>
+                    <button onClick={() => setdataToEdit([player, !dataToEdit[1]])}>Editar</button>
                     <button onClick={() => deleteData(player.id)}>Eliminar</button>
                 </div>
             </div>

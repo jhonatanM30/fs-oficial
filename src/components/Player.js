@@ -4,12 +4,12 @@ import { ListPlayers } from './ListPlayers';
 import { helpHttp } from '../helpers/helpHttp';
 import db from '../api/db.json'
 
+const clicSomeData = false;
 
 export const Player = () => {
-    const [dataPlayer, setdataPlayer] = useState([db.players])
-    const [dataToEdit, setdataToEdit] = useState(null)
-    
-
+    const [dataPlayer, setdataPlayer] = useState([])
+    const [dataToEdit, setdataToEdit] = useState([null, clicSomeData])
+       
     let api = helpHttp();
     let url = 'http://localhost:5000/players'
 
@@ -53,7 +53,8 @@ export const Player = () => {
             <ListPlayers
                 data={dataPlayer}
                 setdataToEdit={setdataToEdit}
-                deleteData={deleteData} />               
+                deleteData={deleteData}
+                dataToEdit={dataToEdit} />               
         </div>
     )
 }
