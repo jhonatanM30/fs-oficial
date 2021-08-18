@@ -6,8 +6,7 @@ import Spinner from '../helpers/Spinner';
 
 
 
-export const ListPlayers = ({ data, setdataToEdit, deleteData }) => {
-    
+export const ListPlayers = ({ data, setdataToEdit, deleteData, dataToEdit }) => {  
     return (
         <div className="cards">            
              <div className="ban-title">Lista de Jugadores</div>
@@ -20,6 +19,7 @@ export const ListPlayers = ({ data, setdataToEdit, deleteData }) => {
                             player={player}
                             setdataToEdit={setdataToEdit}
                             deleteData={deleteData}
+                            dataToEdit={dataToEdit}
                         />
                     )
             }
