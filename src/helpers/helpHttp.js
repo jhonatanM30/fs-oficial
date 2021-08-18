@@ -14,12 +14,11 @@ export const helpHttp = () => {
 
         options.body = JSON.stringify(options.body) || false;
 
-        if (!options.body) delete options.body
-        console.log(options);
+        if (!options.body) delete options.body        
         setTimeout(() => controller.abort(), 3000);
 
         return fetch(endpoint, options)
-            .then((resp) =>
+            .then((resp) =>            
                 resp.ok ? resp.json()
                     : Promise.reject({
                         err: true,

@@ -83,6 +83,12 @@
   }
 }
 
+.btn-link{  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
 .container .btn-go{
   text-decoration: none;
     padding: 10px 20px;
@@ -92,7 +98,8 @@
     font-weight: 800;
     color: #111;
     opacity: 0.8; 
-    margin-left: 1rem;             
+    margin-left: 1rem;    
+                 
 }
 
 .container .btn-go:hover{
@@ -108,6 +115,24 @@
   color:  #9bdc28;
   transition: 0.5s;
 }
+
+@media (max-width: 768px) {
+  .hero .container{
+    margin: 0.5rem;
+  }
+  .hero h1,  .container span {
+    font-size: 30px;  
+   
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .container .btn-go{
+    margin-top: 1rem;
+    opacity: 1;
+  }
+}
+ 
 
 
 

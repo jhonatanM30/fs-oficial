@@ -1,0 +1,83 @@
+
+.contenedor{
+    width: 500px;
+    margin:30px auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+/** CARGANDO **/
+@keyframes chars{
+    0%{
+        color: #9bdc28;
+    }
+    
+    25%{
+        color: rgba(0,0,0,.25);
+    }
+    
+    50%{
+        color: #9bdc28;
+    }
+    
+    75%{
+        color: rgba(0,0,0,.75);
+    }
+    
+    100%{
+        color: #9bdc28;
+    }
+}
+
+.contenedor span{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.char1 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+}
+
+.char2 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 0.2s;
+}
+
+.char3 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 0.4s;
+}
+
+.char4 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 0.6s;
+}
+
+.char5 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 0.8s;
+}
+
+.char6 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 1s;
+}
+
+.char7 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 1.2s;
+}
+
+.char8 {
+    color: rgba(0,0,0,0);
+    animation: chars 3s infinite linear;
+    animation-delay: 1.4s;
+}

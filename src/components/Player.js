@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { FormPlayers } from "./FormPlayers";
 import { ListPlayers } from './ListPlayers';
 import { helpHttp } from '../helpers/helpHttp';
+import db from '../api/db.json'
 
 
 export const Player = () => {
-    const [dataPlayer, setdataPlayer] = useState([])
+    const [dataPlayer, setdataPlayer] = useState([db.players])
     const [dataToEdit, setdataToEdit] = useState(null)
     
 
@@ -17,7 +18,8 @@ export const Player = () => {
         !resp.err ? setdataPlayer(resp)
         : alert(`Error ${resp.err}`);        
       });
-    }, [])
+      
+    },[])
 
     const createData = (newPlayer) => {
         newPlayer.id = Date.now();

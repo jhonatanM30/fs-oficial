@@ -6,7 +6,7 @@ import "../css/home.css";
 
 export const Home = () => {
     return (
-        <div className="cont">
+        <div className="cont">                 
             <div className="hero">
                 <div className="container">
                     <h1>Bienvenido A <span>La Liga De Fútbol</span></h1>
@@ -14,6 +14,7 @@ export const Home = () => {
                     <button className="arrow">
                         <i className="fas fa-arrow-down fa-5x"></i>                        
                     </button> <br></br> 
+                    <div className="btn-link">
                     <Link to="/jugadores" className="btn-go">
                         Lo mejor de la fecha 📺                      
                     </Link>  
@@ -22,7 +23,8 @@ export const Home = () => {
                     </Link>  
                     <Link to="/jugadores" className="btn-go">
                        Jugador de la fecha 🥇                      
-                    </Link>                 
+                    </Link>  
+                    </div>                                   
                 </div>
             </div>
         </div>

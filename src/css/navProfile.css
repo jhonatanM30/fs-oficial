@@ -27,12 +27,13 @@
 
 
 .btn-profile {
-  color: #000000;
+  color: #ffffff;
   font-size: 70px;
   width: 100px;
   height: 100px;
   border: 1px;
   background-color: transparent;
+  opacity: 0.8;
 }
 
 .btn-sound,

@@ -1,126 +1,31 @@
-.main-modal {
-  display: flex;
-  width: auto;
-  height: auto;
-}
-
-.but-open {
-  padding: 10px 20px;
+.btn-pri{
+  padding: .375rem .375rem;
   background: #9bdc28;
-  border: none;
-  border-radius: 5px;
-  margin: 1rem;
-  font-weight: 600;
-  color: #111;
-  transition: 0.5s;
-}
-
-.but-open:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 166, 0);
-}
-
-.modal-overlay {
-  display: none;
-  position: fixed;
-  z-index: 20000;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.content-modal {
-  background: #fff;
-  opacity: 0.7;
-  border-radius: 20px;
-  margin: 5% auto;
-  width: auto;
-  padding: 4rem;
-  padding-top: 0.5rem;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  border: 1px ridge #000000;
-}
-
-.form-reg {
-  display: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.form-group legend {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: .25rem;  
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   text-align: center;
-  color: #9bdc28;
-  font-weight: 700;
-}
-.form-reg .close{     
-     margin-left: 20rem;
-     margin-top: 0rem;
-     text-align: end; 
-     width: auto;                
+  margin: .25rem;
 }
 
-.form-reg .close:hover{     
-    animation: myAnimClose 2s ease 0s 1 normal forwards;              
+
+
+.btn-pri:hover {
+  background: #9bdc2880;  
 }
 
-@keyframes myAnimClose {
-    0% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
-      transform-origin: center center;
-    }
-  
-    10% {
-      animation-timing-function: ease-in;
-      transform: scale(0.91);
-    }
-  
-    17% {
-      animation-timing-function: ease-out;
-      transform: scale(0.98);
-    }
-  
-    33% {
-      animation-timing-function: ease-in;
-      transform: scale(0.87);
-    }
-  
-    45% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
-    }
-  }
 
-.form-group label {
-  margin-top: 0.5rem;
-  color: tomato;
+.row{
+    padding: 0.5rem;
 }
 
-.form-reg .btn-send,  .form-reg .btn-clear{
-  margin: 0.5rem;
-  margin-left: auto;
-  background: #9bdc28;
-  border: none;
-  border-radius: 5px;
-  font-weight: 800;
-  font-size: 15px;
-  color: #111;
-  transition: 0.5s;
-  padding: 10px 15px;
+.modal-title {
+  text-align: center;
+  width: 90%;
 }
-
-.form-reg .btn-clear{
-    background: #a0a0a0;
-}
-
-.form-reg button:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 166, 0);
-  }
