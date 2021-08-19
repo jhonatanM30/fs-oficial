@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { helpHttp } from '../helpers/helpHttp';
-
+import { FormTeam } from './FormTeam';
 import { ListTeam } from './ListTeam';
+
 
 
 
@@ -19,8 +20,14 @@ export const Team = () => {
         })
     }, [])
 
+    const createTeam = (newTeam) => {
+        newTeam.team_key  = Date.now();
+        setdataTeam([...dataTeam, newTeam]);       
+    }
+
     return (
         <div className="container">
+            <FormTeam createTeam={createTeam}/>
             <ListTeam data={dataTeam}/>
         </div>
     );

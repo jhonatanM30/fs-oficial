@@ -18,9 +18,6 @@ const initialForm = {
   player_red_cards: '',
 }
 
-
-
-
 export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
 
   const [formState, setFormState] = useState(initialForm);
@@ -33,9 +30,6 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
       setFormState(initialForm)
     }   
   }, [dataToEdit])
-
- 
-
 
   const handleChange = (e) => {
     setFormState({
