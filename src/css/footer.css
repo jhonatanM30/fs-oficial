@@ -19,7 +19,7 @@
   justify-content: center;
   width: 100%;    
   font: bold 16px sans-serif;
-  padding: 2rem;    
+ margin-top: 2rem;    
 }
 
 .container-footer h3 span{

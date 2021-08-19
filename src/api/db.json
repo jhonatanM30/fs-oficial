@@ -1,10 +1,16 @@
 {
     "teams":[
         {
-            "team_key": "7099",
+            "team_key": "96",
             "team_name": "Juventus",
-            "team_logo": "https://allsportsapi.com/logo/2616_chelsea.png",
+            "team_logo": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg",
             "manager": "Pirlo"
+        }, 
+        {
+            "team_key": "97",
+            "team_name": "Barcelona",
+            "team_logo": "https://apiv2.allsportsapi.com//logo//97_barcelona.jpg",
+            "manager": "Pep Guardiola"
         } 
     ],
 

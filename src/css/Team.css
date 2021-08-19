@@ -1,0 +1,9 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.card a{
+    margin: 1rem;
+}
