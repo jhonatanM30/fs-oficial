@@ -25,7 +25,8 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
   useEffect(() => {
     if (dataToEdit[0]) {            
       setFormState(dataToEdit[0]) 
-      openModal('openModal');          
+      openModal('openModal');    
+      
     } else {
       setFormState(initialForm)
     }   
@@ -47,10 +48,10 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
     }
     if (formState.id === null) {
       createData(formState)
-    } else {
-      updateData(formState)
-    }
-    handleReset();
+      handleReset();
+    } else {        
+      updateData(formState)      
+    }    
   };
 
   const handleReset = () => {
@@ -156,7 +157,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
               </div>
             </div>
             <div className="modal-footer">
-              <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
+              <button type="submit"  className="btn btn-primary" onClick={handleSubmit}>
                 {
                   formState.id ? "Actualizar" : "Enviar"
                 }                
