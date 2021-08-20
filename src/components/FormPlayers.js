@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-
 import '../css/form.css'
+import { openModal } from '../helpers/modal';
 
 
 const initialForm = {
@@ -24,8 +24,8 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
 
   useEffect(() => {
     if (dataToEdit[0]) {            
-      setFormState(dataToEdit[0])     
-      openModal(); 
+      setFormState(dataToEdit[0]) 
+      openModal('openModal');          
     } else {
       setFormState(initialForm)
     }   
@@ -58,11 +58,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
     setdataToEdit([null, false])
   }
 
-  const openModal = () => {
-    var modal = new window.bootstrap.Modal(document.getElementById('openModal'));
-    modal.show();
-  }
-
+ 
   return (
     <div className="container">
       <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#openModal" onClick={handleReset}>

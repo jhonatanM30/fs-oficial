@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
+import { openModal } from '../helpers/modal';
 
 const initialFormTeam = {
   team_key: "",
@@ -8,8 +9,17 @@ const initialFormTeam = {
   manager: "",
 };
 
-export const FormTeam = ({ createTeam }) => {
+export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit }) => {
   const [formTeamState, setformTeamState] = useState(initialFormTeam)
+
+  useEffect(() => {
+    if(dataTeamEdit[0]){
+      setformTeamState(dataTeamEdit[0])
+      openModal('openModal')  
+    }else{
+      setformTeamState(initialFormTeam)
+    }
+  }, [dataTeamEdit])
 
   const handleChange = (e) => {
     setformTeamState({
@@ -20,14 +30,14 @@ export const FormTeam = ({ createTeam }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if (!formTeamState.team_name) {
       alert("Datos incompletos");
       return;
     }
-    if (!formTeamState.team_key) {       
-        createTeam(formTeamState);
-    }
+
+    !formTeamState.team_key ? createTeam(formTeamState)
+    : updateTeam(formTeamState)
 
     handleReset();
   };

@@ -11,6 +11,12 @@
             "team_name": "Barcelona",
             "team_logo": "https://apiv2.allsportsapi.com//logo//97_barcelona.jpg",
             "manager": "Pep Guardiola"
+        }, 
+        {
+            "team_key": "98",
+            "team_name": "Dinamo-Kiev",
+            "team_logo": "https://apiv2.allsportsapi.com//logo//98_dinamo-kiev.jpg",
+            "manager": "Mauro Shan"
         } 
     ],
 
@@ -28,7 +34,37 @@
             "player_goals": "4",
             "player_yellow_cards": "1",
             "player_red_cards": "0",
-            "team_key": "7099"
+            "team_key": "96"
+        },
+        {
+            "id": 2,
+            "name": "Pique",
+            "team": "Barcelona",
+            "img": "",
+            "player_number": "2",
+            "player_country": "España",
+            "player_type": "Defensa",
+            "player_age": "32",
+            "player_match_played": "20",
+            "player_goals": "4",
+            "player_yellow_cards": "7",
+            "player_red_cards": "2",
+            "team_key": "97"
+        },
+        {
+            "id": 3,
+            "name": "Zylichenco",
+            "team": "Dinamo-Kiev",
+            "img": "",
+            "player_number": "19",
+            "player_country": "Ucrania",
+            "player_type": "Volante",
+            "player_age": "22",
+            "player_match_played": "5",
+            "player_goals": "1",
+            "player_yellow_cards": "3",
+            "player_red_cards": "0",
+            "team_key": "98"
         }
     ]    
 }
