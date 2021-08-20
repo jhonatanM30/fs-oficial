@@ -8,7 +8,7 @@ export const ListTeam = ({ data, dataTeamEdit, setdataTeamEdit }) => {
   console.log(data)  
   return (
     <Fragment>
-      <div className="ban-title">Lista de Equipos</div>
+      <div className="ban-title mx-auto">Lista de Equipos</div>
       <div class="row">
         {
           data.length < 1 ? <Spinner></Spinner>
