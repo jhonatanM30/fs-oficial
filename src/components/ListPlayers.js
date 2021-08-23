@@ -3,9 +3,6 @@ import ListPlayersItem from './ListPlayersItem';
 import '../css/listPlayers.css'
 import Spinner from '../helpers/Spinner';
 
-
-
-
 export const ListPlayers = ({ data, setdataToEdit, deleteData, dataToEdit }) => {  
     return (
         <div className="cards">            

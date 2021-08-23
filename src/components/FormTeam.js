@@ -15,7 +15,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
   useEffect(() => {
     if(dataTeamEdit[0]){
       setformTeamState(dataTeamEdit[0])
-      openModal('openModal')  
+      openModal('teamModal')  
     }else{
       setformTeamState(initialFormTeam)
     }
@@ -52,14 +52,14 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
-        data-bs-target="#openModal"
+        data-bs-target="#teamModal"
         onClick={handleReset}
       >
         <i className="fas fa-user-plus" /> Registrar Equipo
       </button>
       <div
         className="modal fade"
-        id="openModal"
+        id="teamModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
