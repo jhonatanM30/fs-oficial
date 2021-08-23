@@ -44,6 +44,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
 
   const handleReset = () => {      
     setformTeamState(initialFormTeam);
+    setdataTeamEdit([null, false])
   };
 
   return (

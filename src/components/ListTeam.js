@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Spinner from "../helpers/Spinner";
 import ListTeamItem from './ListTeamItem';
 
-export const ListTeam = ({ data, dataTeamEdit, setdataTeamEdit }) => {
+export const ListTeam = ({ data, dataTeamEdit, setdataTeamEdit, stateMoreDetails, setstateMoreDetails }) => {
 
   return (
     <Fragment>
@@ -17,7 +17,9 @@ export const ListTeam = ({ data, dataTeamEdit, setdataTeamEdit }) => {
                 team={team}
                 dataTeamEdit={dataTeamEdit}
                 setdataTeamEdit={setdataTeamEdit}
-              />
+                stateMoreDetails={stateMoreDetails} 
+                setstateMoreDetails={setstateMoreDetails} />
+             
             )
         }
       </div>
