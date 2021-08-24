@@ -1,16 +1,83 @@
-.buttonUD{
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 1rem; 
-    font-weight: 600;
-    color: #111;
-    transition: 0.5s;      
+.buttonUD {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  font-weight: 600;
+  color: #111;
+  transition: 0.5s;
+}
+
+.buttonUD:hover {
+  background: #9bdc28;
+  transition: 0.1s;
+}
+
+.table thead {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 166, 0);
+  text-align: center;
+  font-size: 15px;
+  vertical-align: middle;
+  position: sticky;
+  top: 0px;
+}
+
+.table td {
+  color: rgb(0, 0, 0);
+  border-color: rgb(255, 166, 0);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.conten-table{
+  height: 20rem;
+  width: 100%;
+  overflow-y: auto;
+  border: 0.2rem solid;
+}
+
+.close-table{
+  font-size: 2rem;
+  vertical-align: middle;
+  animation: myAnim 3s ease-in 0s infinite alternate forwards;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(10px);
   }
 
-  .buttonUD:hover{
-    background: #9bdc28;
-    transition: 0.1s;  
+  20% {
+    opacity: 1;
   }
+
+  40% {
+    animation-timing-function: ease-in;   
+    transform: translateX(6px);
+  }
+
+  60% {
+    animation-timing-function: ease-in;   
+    transform: translateX(4px);    
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
