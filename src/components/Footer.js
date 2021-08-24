@@ -2,8 +2,8 @@ import React from "react";
 import "../css/footer.css";
 export const Footer = () => {
   return (
-    <footer className="container-footer">   
-        <div className="footer-item-left">
+    <footer className="cont-footer row">           
+        <div className="col footer-item-left">
           <h3>
             FS <span>Oficial</span>
             <span>⚽</span>
@@ -15,7 +15,7 @@ export const Footer = () => {
           </div>
           <p className="footer-company-name">Jhonatan Cuesta Marin &copy; 2021</p>
         </div>
-        <div className="footer-item-center">
+        <div className="col footer-item-center">
           <div className="item-center-icon">
             <i className="fa fa-map-marker"></i> <span>Colombia  Medellín(Antioquia)</span>{" "}           
           </div>
@@ -31,7 +31,7 @@ export const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="footer-item-right">
+        <div className="col footer-item-right">
           <p className="footer-company-about">
             <span>About the company</span>           
             Fantacy Design is a blog for web designers, web develpor &amp; SEO
