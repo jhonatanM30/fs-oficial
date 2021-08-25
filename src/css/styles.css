@@ -27,6 +27,7 @@
 .row{
   padding: 0;
 }
+
 .cont-home {
   text-align: center;
   background-color: #9bdc28;
@@ -34,6 +35,7 @@
   background: #050505;
   opacity: 0.6;
   border-radius: 20px; 
+  padding: 1rem;
 }
 
 .row .titleHome {
@@ -47,7 +49,7 @@
   color: #ffffff;
 }
 
-.row p {
+.row .decription {
   font-size: 20px;
   letter-spacing: 1px;
   color: rgb(255, 255, 255);
@@ -82,11 +84,11 @@
   }
 }
 
-.container span{
+.container .titleHome2{
   color: #ffffff;
   font-size: 50px;
 }
-.container span:hover{
+.container .titleHome2:hover{
   color:  #9bdc28;
   transition: 0.5s;
 }
@@ -158,8 +160,51 @@
   }
 }
 
+
 .cont-footer {
   background-color: rgb(0, 0, 0);   
-  font: bold 16px sans-serif;
- margin-top: 2rem;    
+  font: 14px sans-serif;  
+  margin-top: 5rem;
+ 
 }
+
+
+.link, .span-footer{
+  line-height: 1.8;
+  text-decoration: none;
+  color:  rgb(255, 255, 255);
+  margin: auto;
+}
+
+
+.cont-footer .company-name{    
+  font-size: 1rem; 
+  height: 3rem;  
+  text-align: center;
+  padding: 2rem;
+  color:  rgb(255, 255, 255);
+  background-color: rgb(10, 10, 10);
+}
+
+.row .span-footer:hover, .link:hover{
+ color:  #9bdc28;
+ transition: 0.5s;  
+}
+
+.icon-footer{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;  
+}
+
+.icon-footer a{
+ color:  #9bdc28;
+ margin: 1rem;
+}
+
+.icon-footer a:hover{
+  color:  #a3b18a;
+  transition: 0.5s;  
+ }

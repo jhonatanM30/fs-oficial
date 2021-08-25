@@ -9,12 +9,12 @@ export const Home = () => {
         <div className="container cont-home">
             <div className="row">
                 <div className="col">
-                    <h1 className="titleHome">Bienvenido A <span>La Liga De Fútbol</span></h1>
+                    <h1 className="titleHome">Bienvenido A <span className="titleHome2">La Liga De Fútbol</span></h1>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <p>En la plataforma de la liga de fútbol te presentamos lo mejor para ti y tu equipo, visita las diferentes opciones y hazte un gol actualizando la información de tu interes</p>
+                    <p className="decription">En la plataforma de la liga de fútbol te presentamos lo mejor para ti y tu equipo, visita las diferentes opciones y hazte un gol actualizando la información de tu interes</p>
                 </div>
             </div>            
             <div className="row justify-content-lg-center justify-content-sm-center">
