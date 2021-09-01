@@ -47,7 +47,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[1]}
           >
-            Gestionar Equipos
+            Equipos
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -57,7 +57,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[2]}
           >
-            Gestionar Jugadores
+            Jugadores
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -67,17 +67,17 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[3]}
           >
-            Gestionar Partidos
+            Resultado de Partidos
           </Link>
         </li>
         <li className="nav-menu-item">
-          <Link to="/Noticias"              
+          <Link to="/Galeria Futbolera"              
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[4]}
           >
-            Noticias
+            Galeria futbolera
           </Link>
         </li>
       </ul>

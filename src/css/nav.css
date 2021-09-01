@@ -8,10 +8,11 @@
 .nav { 
   background-color:rgb(0, 0, 0);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; 
   width: 100%; 
-  height: 60px;
-  padding-top: 1rem;
+  height: auto;
+  padding-top: 0.5rem;
 
 }
 
@@ -21,7 +22,7 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
-  font-weight: 600;  
+  font-weight: 600;   
 }
 
 
@@ -37,8 +38,6 @@
   color: #9bdc28;
 }
 
-a:active { color: lime; }
-
 .nav-menu {
   display: flex;
   margin-right: 40px;
@@ -46,11 +45,9 @@ a:active { color: lime; }
 }
 
 .nav-menu-item {
-  font: bold 16px sans-serif;
   margin: 0 10px;
   line-height: 50px;
   text-transform: uppercase;
-  width: max-content; /* Para que al hacer responsive no se corten las palabras*/
 }
 
 .nav-menu-link:hover, .nav-menu-link_active {
@@ -86,10 +83,6 @@ a:active { color: lime; }
 
 
 @media (max-width: 768px) {
-  .nav-menu-link {
-    color: rgb(0, 0, 0); 
-
-  }
   .logo {
     font-size: 20px;
     padding: 0 20px;
@@ -100,21 +93,21 @@ a:active { color: lime; }
     flex-direction: column;
     right: 100%;
     margin-right: auto;
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(0, 0, 0);
     position: absolute;
-    top: 60px;
+    top: 65px;
     width: 100%;
     align-items: center;
-    height: 50%;
-    overflow-y: auto; /* Ponga el scroll cuando sea necesario*/    
-    transition: 0.4s;
+    height: auto;
+    overflow: hidden;
+    transition: 1s;
     z-index: 30000;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
   }
 
   .nav-menu-item {
-    line-height: 55px;
-    width: 100%;
-    text-align: center;
+    line-height: 45px;
   }
 
   .nav-menu-link:hover, .nav-menu-link_active {

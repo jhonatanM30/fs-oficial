@@ -17,13 +17,8 @@
             "team_name": "Dinamo-Kiev",
             "team_logo": "https://apiv2.allsportsapi.com//logo//98_dinamo-kiev.jpg",
             "manager": "Mauro Shan"
-        },
-        {
-            "team_key": "99",
-            "team_name": "Dinamo-Kiev",
-            "team_logo": "https://apiv2.allsportsapi.com//logo//98_dinamo-kiev.jpg",
-            "manager": "Mauro Shan"
-        }  
+        }
+          
     ],
 
     "players": [
@@ -72,5 +67,28 @@
             "player_red_cards": "0",
             "team_key": "98"
         }
-    ]    
+    ], 
+    
+    "galery":[
+        {
+            "id": "1",           
+            "img": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg"            
+        }, 
+        {
+            "id": "2",           
+            "img": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg"            
+        }, 
+        {
+            "id": "3",           
+            "img": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg"            
+        }, 
+        {
+            "id": "4",           
+            "img": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg"            
+        }, 
+        {
+            "id": "5",           
+            "img": "https://apiv2.allsportsapi.com/logo/96_juventus.jpg"            
+        }
+    ]
 }

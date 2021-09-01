@@ -208,3 +208,51 @@
   color:  #a3b18a;
   transition: 0.5s;  
  }
+
+
+ .content-item-carousel{
+  background-image: url("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/10/15865379018557.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  
+  text-align: center;
+  border-radius: 1rem;
+ }
+
+ .title-slide, .carousel-team, .carousel-Info{
+  color: rgb(255, 255, 255);
+ }
+
+ .carousel-Info, .panel-heading label{
+  font-size: 20px;
+  font-weight:bold;
+ }
+
+ .carousel-control-prev{
+   background-color: #000000;
+   margin-left: 0.8rem;
+   border-radius: 1rem;
+   width: 8%;
+   
+ }
+
+ .carousel-control-next{
+  background-color: #000000;
+  margin-right: 0.7rem;
+  border-radius: 1rem;
+  width: 8%;  
+ }
+
+ .img{
+  margin:10px auto;
+  border-radius:5px;
+  border: 1px solid #999;
+  padding:13px;
+  width: 30%;
+  height:auto;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  }
+.img img{
+  width: 100%;
+}

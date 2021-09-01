@@ -12,6 +12,9 @@ import { Home } from './Home';
 import { Team } from './Team';
 import { Player } from './Player';
 import { Footer } from './Footer';
+import { Matches } from './Matches';
+import { Galery } from './Galery';
+
 
 
 const CrudApp = () => {
@@ -29,6 +32,12 @@ const CrudApp = () => {
                     </Route>
                     <Route exact path="/jugadores">
                         <Player />
+                    </Route>
+                    <Route exact path="/partidos">
+                        <Matches />
+                    </Route>
+                    <Route exact path="/Galeria Futbolera">
+                        <Galery />
                     </Route>
                 </Switch>
                 <Footer></Footer>
