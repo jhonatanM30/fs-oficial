@@ -1,26 +1,29 @@
 import React, { useState, useEffect } from 'react'
-import { helpHttp } from '../helpers/helpHttp';
+import Spinner from '../helpers/Spinner';
 import { GaleryItem } from './GaleryItem';
-
-
+import {getImgGalery} from '../helpers/galery'
 export const Galery = () => {
     const [stateGalery, setstateGalery] = useState([])
 
-    let api = helpHttp();
-    let url = 'http://localhost:5000/galery'
-
     useEffect(() => {
-        api.get(url).then(resp => {
-            !resp.err ? setstateGalery(resp)
-                : alert(`Error ${resp.err}`);
-                
-        })
+        const resul = getImgGalery()
+        setstateGalery( resul )
     }, [])
+  
 
     return (
         <div className="container">
-            <div class="d-flex flex-row bd-highlight mb-3">
-                <GaleryItem stateGalery={stateGalery}/>
+            <div className="d-flex flex-row flex-wrap justify-content-center">
+            {                
+                stateGalery.length < 1 ?
+                    <Spinner></Spinner>
+                    : stateGalery.map(galery =>
+                        <GaleryItem
+                            key={galery.id}
+                            galery={galery}                            
+                        />
+                    )
+            }              
             </div>
         </div>
     )
