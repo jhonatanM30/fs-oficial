@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/fs-oficial/static/css/main.70a509ce.chunk.css",
-    "main.js": "/fs-oficial/static/js/main.c9f316ee.chunk.js",
-    "main.js.map": "/fs-oficial/static/js/main.c9f316ee.chunk.js.map",
+    "main.css": "/fs-oficial/static/css/main.2ad052b1.chunk.css",
+    "main.js": "/fs-oficial/static/js/main.14d84c03.chunk.js",
+    "main.js.map": "/fs-oficial/static/js/main.14d84c03.chunk.js.map",
     "runtime-main.js": "/fs-oficial/static/js/runtime-main.d4e9a58c.js",
     "runtime-main.js.map": "/fs-oficial/static/js/runtime-main.d4e9a58c.js.map",
-    "static/css/2.d45d6843.chunk.css": "/fs-oficial/static/css/2.d45d6843.chunk.css",
-    "static/js/2.9a6775f7.chunk.js": "/fs-oficial/static/js/2.9a6775f7.chunk.js",
-    "static/js/2.9a6775f7.chunk.js.map": "/fs-oficial/static/js/2.9a6775f7.chunk.js.map",
+    "static/js/2.167f1319.chunk.js": "/fs-oficial/static/js/2.167f1319.chunk.js",
+    "static/js/2.167f1319.chunk.js.map": "/fs-oficial/static/js/2.167f1319.chunk.js.map",
     "index.html": "/fs-oficial/index.html",
-    "static/css/2.d45d6843.chunk.css.map": "/fs-oficial/static/css/2.d45d6843.chunk.css.map",
-    "static/css/main.70a509ce.chunk.css.map": "/fs-oficial/static/css/main.70a509ce.chunk.css.map",
-    "static/js/2.9a6775f7.chunk.js.LICENSE.txt": "/fs-oficial/static/js/2.9a6775f7.chunk.js.LICENSE.txt",
-    "static/media/Atletico-nacional.a24331fd.jpg": "/fs-oficial/static/media/Atletico-nacional.a24331fd.jpg",
-    "static/media/boca.afa55760.png": "/fs-oficial/static/media/boca.afa55760.png"
+    "static/css/main.2ad052b1.chunk.css.map": "/fs-oficial/static/css/main.2ad052b1.chunk.css.map",
+    "static/js/2.167f1319.chunk.js.LICENSE.txt": "/fs-oficial/static/js/2.167f1319.chunk.js.LICENSE.txt",
+    "static/media/adriano.05303c46.jpg": "/fs-oficial/static/media/adriano.05303c46.jpg",
+    "static/media/cr7.edc3ba9b.jpg": "/fs-oficial/static/media/cr7.edc3ba9b.jpg",
+    "static/media/falcao.5d9ff9e7.jpg": "/fs-oficial/static/media/falcao.5d9ff9e7.jpg",
+    "static/media/galacticos.76a1ced8.jpg": "/fs-oficial/static/media/galacticos.76a1ced8.jpg",
+    "static/media/crudApp.css": "/fs-oficial/static/media/home1.7852150a.jpg",
+    "static/media/maradona.395a9bea.jpg": "/fs-oficial/static/media/maradona.395a9bea.jpg",
+    "static/media/mbape.b7538afd.jpg": "/fs-oficial/static/media/mbape.b7538afd.jpg",
+    "static/media/messi.9d3d4748.jpg": "/fs-oficial/static/media/messi.9d3d4748.jpg",
+    "static/media/pirlo.12384836.jpg": "/fs-oficial/static/media/pirlo.12384836.jpg",
+    "static/media/psg.1c46a82a.jpg": "/fs-oficial/static/media/psg.1c46a82a.jpg",
+    "static/media/zidane-zambrano.d85c111b.jpg": "/fs-oficial/static/media/zidane-zambrano.d85c111b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4e9a58c.js",
-    "static/css/2.d45d6843.chunk.css",
-    "static/js/2.9a6775f7.chunk.js",
-    "static/css/main.70a509ce.chunk.css",
-    "static/js/main.c9f316ee.chunk.js"
+    "static/js/2.167f1319.chunk.js",
+    "static/css/main.2ad052b1.chunk.css",
+    "static/js/main.14d84c03.chunk.js"
   ]
 }
