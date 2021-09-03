@@ -8,8 +8,7 @@ export const Nav = () => {
     
     return (
         <div>            
-          <NavButton></NavButton>
-          <NavProfile></NavProfile>            
+          <NavButton></NavButton>                   
         </div>
     )
 }

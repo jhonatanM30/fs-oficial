@@ -1,8 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
 
-export const CarouselItem = ({ match }) => {
-    console.log(match)
+export const CarouselItem = ({ match }) => {  
     return (
         <Fragment>
             <div className="bg-primary row">

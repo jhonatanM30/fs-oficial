@@ -1,11 +1,10 @@
 import React from 'react'
 
 let classNameValue = "";
-let count = 1;
-export const Carousel = ({ match }) => {
-    if (count === 1) {
-        classNameValue = "carousel-item active container "
-        count = count + 1
+
+export const Carousel = ({ match, stateFirstCarousel }) => {      
+    if (stateFirstCarousel === 1) {
+        classNameValue = "carousel-item active container"       
     } else {
         classNameValue = "carousel-item container"
     }

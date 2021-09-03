@@ -12,7 +12,7 @@ export const Galery = () => {
   
 
     return (
-        <div className="container">
+        <div className="container cont-galery">
             <div className="d-flex flex-row flex-wrap justify-content-center">
             {                
                 stateGalery.length < 1 ?

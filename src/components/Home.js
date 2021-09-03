@@ -24,9 +24,7 @@ export const Home = () => {
         <div className="col-sm-6 col-lg-3  g-0 ">
           <a
             href="https://www.youtube.com/watch?v=Har1v9ArTj4&ab_channel=WinSports"
-            target="_blank"
-            atributos
-            con
+            target="_blank"           
             rel="noreferrer"
             className="buttonUD"
           >
@@ -34,17 +32,13 @@ export const Home = () => {
           </a>
         </div>
         <div className="col-sm-6 col-lg-3 g-0">
-          <a href="https://www.youtube.com/watch?v=zqG1RPxu1KU&ab_channel=PieBall" target="_blank"
-            atributos
-            con
+          <a href="https://www.youtube.com/watch?v=zqG1RPxu1KU&ab_channel=PieBall" target="_blank"            
             rel="noreferrer" className="buttonUD">
             Gol de la fecha ⚽
           </a>{" "}
         </div>
         <div className="col-sm-6 col-lg-3  g-0">
-          <a href="https://www.youtube.com/watch?v=aA9WUL3vhlE&ab_channel=BotingolTV" target="_blank"
-            atributos
-            con
+          <a href="https://www.youtube.com/watch?v=aA9WUL3vhlE&ab_channel=BotingolTV" target="_blank"            
             rel="noreferrer" className="buttonUD">
             Jugador de la fecha 🥇
           </a>{" "}

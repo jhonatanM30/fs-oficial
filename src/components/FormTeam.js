@@ -56,7 +56,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
         data-bs-target="#teamModal"
         onClick={handleReset}
       >
-        <i className="fas fa-user-plus" /> Registrar Equipo
+        <i className="fas fa-plus"></i> Registrar Equipo
       </button>
       <div
         className="modal fade"
@@ -82,7 +82,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
               <div className="container">
                 <form>
                   <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-6">
                       <div className="form-group">
                         <label htmlFor="team_name">Equipo</label>
                         <input
@@ -95,7 +95,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
                         />
                       </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-6">
                       <div className="form-group">
                         <label htmlFor="manager">Entrenador</label>
                         <input
@@ -108,14 +108,14 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
                         />
                       </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-12">
                       <div className="form-group">
                         <label htmlFor="team_logo">Logo</label>
                         <input
                           type="text"
                           className="form-control"
                           name="team_logo"
-                          placeholder="Ej: Ingrese el logo del equipo"
+                          placeholder="Ej: Ingrese url de img(.jpg o .png) o nombre del equipo"
                           value={formTeamState.team_logo}
                           onChange={handleChange}
                         />
@@ -131,14 +131,14 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
                 className="btn btn-primary"
                 onClick={handleSubmit}
               >
-                {FormTeam.team_key ? "Actualizar" : "Enviar"}
+                <i className="fas fa-share-square"></i> {FormTeam.team_key ? "Actualizar" : "Enviar"}
               </button>
               <button
                 type="reset"
                 onClick={handleReset}
                 className="btn btn-secondary"
               >
-                Limpiar
+               <i className="fas fa-broom"></i> Limpiar
               </button>
             </div>
           </div>

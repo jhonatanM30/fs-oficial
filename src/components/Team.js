@@ -21,8 +21,8 @@ export const Team = () => {
         })
     }, [])
 
-    const createTeam = (newTeam) => {
-        newTeam.team_key = Date.now();
+    const createTeam = (newTeam) => {       
+        newTeam.team_key = parseInt(dataTeam[dataTeam.length-1].team_key) + 1;
         setdataTeam([...dataTeam, newTeam]);
     }
 
@@ -34,7 +34,7 @@ export const Team = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container cont-team">
             <FormTeam
                 createTeam={createTeam}
                 updateTeam={updateTeam}

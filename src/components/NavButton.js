@@ -30,14 +30,13 @@ export const NavButton = () => {
       </button>
       <ul className="nav-menu">
         <li className="nav-menu-item">
-          <Link to="/"
-             href="https://webcode.tools/generators/css/keyframe-animation"
+          <Link to="/home"           
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[0]}
           >
-            Inicio
+            <i className="fas fa-home"></i> Inicio
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -47,7 +46,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[1]}
           >
-            Equipos
+            <i className="fas fa-tshirt"></i> Equipos
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -57,7 +56,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[2]}
           >
-            Jugadores
+            <i className="fas fa-male"></i> <i className="fas fa-futbol"></i> <i className="fas fa-male"></i> Jugadores
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -67,7 +66,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[3]}
           >
-            Resultado de Partidos
+            <i className="far fa-clipboard"></i> Resultado de Partidos
           </Link>
         </li>
         <li className="nav-menu-item">
@@ -77,7 +76,7 @@ export const NavButton = () => {
             data-bs-placement="bottom"
             title={tooltipAll[4]}
           >
-            Galeria futbolera
+            <i className="far fa-address-card"></i> Galeria futbolera
           </Link>
         </li>
       </ul>

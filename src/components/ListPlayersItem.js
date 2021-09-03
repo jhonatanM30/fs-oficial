@@ -43,8 +43,12 @@ const ListPlayersItem = ({ player, setdataToEdit, deleteData, dataToEdit }) => {
                         <h3>Tarjetas Rojas :</h3>
                         <span>{player.player_red_cards}</span>                       
                     </div>                    
-                    <button onClick={() => setdataToEdit([player, !dataToEdit[1]])}>Editar</button>
-                    <button onClick={() => deleteData(player.id)}>Eliminar</button>
+                    <button onClick={() => setdataToEdit([player, !dataToEdit[1]])}>
+                    <i className="fas fa-edit"></i> Editar
+                    </button>
+                    <button onClick={() => deleteData(player.id)}> 
+                    <i class="fas fa-trash-alt"></i> Eliminar
+                    </button>
                 </div>
             </div>
         </div>

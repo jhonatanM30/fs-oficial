@@ -1,5 +1,8 @@
 import React from "react";
 import "../css/footer.css";
+import { 
+  Link
+} from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="cont-footer text-center text-lg-start">
@@ -11,36 +14,37 @@ export const Footer = () => {
             </h5>
             <ul className="list-unstyled mb-0">
               <li>
-                <a href="#" className="link"><i className="fas fa-book fa-fw fa-sm me-2"></i>Home</a>
+              <i className="fas fa-home"></i> <Link to="/home" className="link">Home</Link>
               </li>
               <li>
-                <a href="#" className="link"><i className="fas fa-book fa-fw fa-sm me-2"></i>All books</a>
+              <i className="fas fa-link"></i> <a href="https://allsportsapi.com/" className="link" target="_blank"
+                   
+            rel="noreferrer">Api - AllSport</a>
               </li>
               <li>
-                <a href="#" className="link"><i className="fas fa-user-edit fa-fw fa-sm me-2"></i>Our authors</a>
+              <i className="fas fa-user-edit"></i> <a href="#" className="link">Our authors</a>
               </li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">
-              Contacto ⚽
+              Contacto 👨‍💻
             </h5>
             <ul className="list-unstyled mb-0">
               <li>
-                <span className="span-footer">Colombia Medellín(Antioquia)</span>
+               <i className="fas fa-map-marker-alt"></i> <span className="span-footer">Colombia Medellín(Antioquia)</span>
               </li>
               <li>
-                <span className="span-footer">+57 312 446 52 00 </span>
+              <i className="fas fa-phone-volume"></i> <span className="span-footer">+57 312 446 52 00 </span>
               </li>
               <li>
-                <a className="link" href="jacuesta13@miestudio.edu.co">jacuesta13@miestudio.edu.co </a>
+              <i className="fas fa-envelope-open-text"></i> <a className="link" href="jacuesta13@miestudio.edu.co">jacuesta13@miestudio.edu.co </a>
               </li>
             </ul>
-
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">
-              Redes Sociales ⚽
+              Redes Sociales 💬
             </h5>
             <ul className="list-unstyled mb-0">
               <li>

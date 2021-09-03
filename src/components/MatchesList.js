@@ -1,30 +1,30 @@
 import React from 'react'
-import Spinner from '../helpers/Spinner'
 import { Carousel } from './Carousel'
+import Spinner from "../helpers/Spinner";
 
 
 
-export const MatchesList = ({ stateMatches }) => {    
+export const MatchesList = ({ stateMatches }) => {
+    let stateFirstCarousel = 0;
     return (
-        <div id="carouselExampleCaptions" className="carousel slide container" data-bs-interval="false">            
+        <div id="carouselExampleCaptions" className="carousel slide container" data-bs-interval="false">
             <div className="carousel-inner content-item-carousel pt-5">
                 <div className="d-flex justify-content-center">
                     <h1 className="title-slide">Resumen del partido</h1>
                 </div>
                 {
-                        stateMatches.result ? (
-                            stateMatches.length < 1 ? <Spinner />
-                            : stateMatches['result'].map(match =>
-                                <Carousel
-                                    key={match.event_key}
-                                    match={match}                                                               
-                                />
-                            ) 
-                        ) : <h1 className="title-slide">No Hay Resultados De Partidos Para Esta Fecha</h1>  
-                                               
+                    stateMatches.length < 1 ? <Spinner></Spinner>
+                        : stateMatches.result ? stateMatches['result'].map(match =>
+                            <Carousel
+                                key={match.event_key}
+                                match={match}
+                                stateFirstCarousel={++stateFirstCarousel}
+                            />
+                        ) : <h1 className="title-slide">No Hay Resultados De Partidos Para Esta Fecha</h1>
+
                 }
 
-            </div>        
+            </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>

@@ -39,8 +39,7 @@ export const InformationTeam = ({ stateMoreDetails, setstateMoreDetails }) => {
         <div className="modal-dialog modal-xl">
           <div className="modal-content ">
             <div className="header text-center">
-              <h1 className="card-title">{stateMoreDetails[0].team_name}</h1>
-              <img src={stateMoreDetails[0].team_logo} alt="logo" />
+              <h1 className="card-title">{stateMoreDetails[0].team_name}</h1>              
               <h5>Entrenador</h5>
               {stateMoreDetails[0].manager}
             </div> 

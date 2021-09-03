@@ -61,7 +61,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
 
  
   return (
-    <div className="container">
+    <div className="container cont-player">
       <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#openModal" onClick={handleReset}>
         <i className="fas fa-user-plus" /> Registrar Jugador
       </button>
@@ -158,11 +158,15 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
             </div>
             <div className="modal-footer">
               <button type="submit"  className="btn btn-primary" onClick={handleSubmit}>
+              <i className="fas fa-share-square"></i>
                 {
                   formState.id ? "Actualizar" : "Enviar"
                 }                
               </button>
-              <button type="reset" onClick={handleReset} className="btn btn-secondary">Limpiar</button>
+              <button type="reset" onClick={handleReset} className="btn btn-secondary">
+              <i className="fas fa-broom"></i> 
+              Limpiar
+              </button>
             </div>
           </div>
         </div>
