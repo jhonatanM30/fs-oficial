@@ -1,7 +1,5 @@
 import React from "react";
-import { 
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/nav.css";
 
 export const NavButton = () => {
@@ -18,11 +16,13 @@ export const NavButton = () => {
     navMenu.classList.toggle("nav-menu_visible");
   };
 
-
   return (
     <nav className="nav">
-      <a  href="https://webcode.tools/generators/css/keyframe-animation" className="logo">
-      League Soccer Play
+      <a
+        href="https://webcode.tools/generators/css/keyframe-animation"
+        className="logo"
+      >
+        League Soccer Play
         <span className="oi oi-monitor padding-icon">🏆</span>
       </a>
       <button className="nav-toogle" onClick={activeMenuMovil}>
@@ -30,7 +30,8 @@ export const NavButton = () => {
       </button>
       <ul className="nav-menu">
         <li className="nav-menu-item">
-          <Link to="/home"           
+          <Link
+            to="/home"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -40,7 +41,8 @@ export const NavButton = () => {
           </Link>
         </li>
         <li className="nav-menu-item">
-          <Link to="/equipos"             
+          <Link
+            to="/equipos"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -50,17 +52,20 @@ export const NavButton = () => {
           </Link>
         </li>
         <li className="nav-menu-item">
-          <Link to="/jugadores"            
+          <Link
+            to="/jugadores"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title={tooltipAll[2]}
           >
-            <i className="fas fa-male"></i> <i className="fas fa-futbol"></i> <i className="fas fa-male"></i> Jugadores
+            <i className="fas fa-male"></i> <i className="fas fa-futbol"></i>{" "}
+            <i className="fas fa-male"></i> Jugadores
           </Link>
         </li>
         <li className="nav-menu-item">
-          <Link to="/partidos"              
+          <Link
+            to="/partidos"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
@@ -70,7 +75,8 @@ export const NavButton = () => {
           </Link>
         </li>
         <li className="nav-menu-item">
-          <Link to="/Galeria Futbolera"              
+          <Link
+            to="/Galeria Futbolera"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
