@@ -12,7 +12,7 @@ export const Galery = () => {
   
 
     return (
-        <div className="container cont-galery">
+        <div className="container cont-galery  animate__animated animate__fadeIn">
             <div className="d-flex flex-row flex-wrap justify-content-center">
             {                
                 stateGalery.length < 1 ?

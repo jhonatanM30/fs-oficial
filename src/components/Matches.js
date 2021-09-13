@@ -28,12 +28,12 @@ export const Matches = () => {
     }, [stateDate])
 
     return (
-        <Fragment>
+        <div className="animate__animated animate__fadeIn" >
             <MatchesForm setstateDate={setstateDate}
                 stateDate={stateDate}
             />
             <MatchesList stateMatches={stateMatches}
             />
-        </Fragment>
+        </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/nav.css";
 
 export const NavButton = () => {
@@ -30,7 +30,7 @@ export const NavButton = () => {
       </button>
       <ul className="nav-menu">
         <li className="nav-menu-item">
-          <Link
+          <NavLink exact activeClassName="active"
             to="/home"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -38,10 +38,10 @@ export const NavButton = () => {
             title={tooltipAll[0]}
           >
             <i className="fas fa-home"></i> Inicio
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-menu-item">
-          <Link
+          <NavLink exact activeClassName="active"
             to="/equipos"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -49,10 +49,10 @@ export const NavButton = () => {
             title={tooltipAll[1]}
           >
             <i className="fas fa-tshirt"></i> Equipos
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-menu-item">
-          <Link
+          <NavLink exact activeClassName="active"
             to="/jugadores"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -61,10 +61,10 @@ export const NavButton = () => {
           >
             <i className="fas fa-male"></i> <i className="fas fa-futbol"></i>{" "}
             <i className="fas fa-male"></i> Jugadores
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-menu-item">
-          <Link
+          <NavLink exact activeClassName="active"
             to="/partidos"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -72,10 +72,10 @@ export const NavButton = () => {
             title={tooltipAll[3]}
           >
             <i className="far fa-clipboard"></i> Resultado de Partidos
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-menu-item">
-          <Link
+          <NavLink exact activeClassName="active"
             to="/Galeria Futbolera"
             className="nav-menu-link"
             data-bs-toggle="tooltip"
@@ -83,7 +83,7 @@ export const NavButton = () => {
             title={tooltipAll[4]}
           >
             <i className="far fa-address-card"></i> Galeria futbolera
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
