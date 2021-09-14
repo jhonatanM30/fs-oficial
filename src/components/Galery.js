@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import Spinner from '../helpers/Spinner';
 import { GaleryItem } from './GaleryItem';
 import {getImgGalery} from '../helpers/galery'
+
 export const Galery = () => {
     const [stateGalery, setstateGalery] = useState([])
 
     useEffect(() => {
-        const resul = getImgGalery()
+        const resul = getImgGalery();
         setstateGalery( resul )
     }, [])
   
