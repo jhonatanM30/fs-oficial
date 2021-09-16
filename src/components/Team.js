@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { helpHttp } from '../helpers/helpHttp';
 import { FormTeam } from './FormTeam';
 import { ListTeam } from './ListTeam';
-import { InformationTeam } from './InformationTeam'
 
 const clicSomeData = false;
 
@@ -46,13 +45,7 @@ export const Team = () => {
                 dataTeamEdit={dataTeamEdit}
                 setdataTeamEdit={setdataTeamEdit}
                 stateMoreDetails={stateMoreDetails} 
-                setstateMoreDetails={setstateMoreDetails}/>
-                
-            {
-                stateMoreDetails[1] && <InformationTeam 
-                                        stateMoreDetails={stateMoreDetails} 
-                                        setstateMoreDetails={setstateMoreDetails} />
-            }
+                setstateMoreDetails={setstateMoreDetails}/>                           
         </div>
     );
 };

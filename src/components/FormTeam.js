@@ -131,7 +131,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
                 className="btn btn-primary"
                 onClick={handleSubmit}
               >
-                <i className="fas fa-share-square"></i> {FormTeam.team_key ? "Actualizar" : "Enviar"}
+                <i className="fas fa-share-square"></i> {formTeamState.team_key ? "Actualizar" : "Enviar"}
               </button>
               <button
                 type="reset"

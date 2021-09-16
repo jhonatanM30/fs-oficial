@@ -33,9 +33,7 @@
   transition: 0.5s;  
 }
 
-.row{
-  padding: 0;
-}
+
 
 .cont-home {
   text-align: center;
@@ -294,8 +292,24 @@
   transition: 0.5s;  
  }
 
+ .my-card {   
+  margin-top: 1rem;
+  box-shadow: 5px 5px 10px 1px #000;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+ }
+
+ .card-img{
+   height: 25vh;
+ }
+
  @media (max-width: 768px) {
   .img-galery{
     width: 100%; 
+  }
+
+  .card-img{
+    height: 45vh;
   }
 }

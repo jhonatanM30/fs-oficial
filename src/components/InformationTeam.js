@@ -1,58 +1,43 @@
 import React, { useState, useEffect } from 'react'
 import { helpHttp } from '../helpers/helpHttp';
-import { openModal } from '../helpers/modal'
+import { CardPlayer } from './CardPlayer';
+import { useParams } from 'react-router'
 import Spinner from '../helpers/Spinner';
-import { BtnClose } from './BtnClose';
-import { Table } from './Table';
 
+export const InformationTeam = () => {
 
-
-
-
-export const InformationTeam = ({ stateMoreDetails, setstateMoreDetails }) => {
+  const { equipoId } = useParams();
 
   const [players, setdataPlayers] = useState([])
 
   let apiKey = '6dd30bcfa05531435924005166a0ba3499563d457e3fc312a37ad2681138866f'
   let api = helpHttp();
-  let url = `https://apiv2.allsportsapi.com/football/?&met=Teams&teamId=${stateMoreDetails[0].team_key}&APIkey=${apiKey}`
+  let url = `https://apiv2.allsportsapi.com/football/?&met=Teams&teamId=${equipoId}&APIkey=${apiKey}`
 
   useEffect(() => {
     api.get(url).then(resp => {
       if (!resp.err) {
         setdataPlayers(resp['result'][0].players);
-        openModal('detailsModal')
       } else {
         alert(`Error ${resp.err}`)
       }
     })
-  }, [])
+  })
 
-  const handleReset = () => {
-    setdataPlayers([]);
-    setstateMoreDetails([null, false])
-  };
 
   return (
     <div className="container">
-      <div className="modal fade" id="detailsModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabIndex="-1">
-        <div className="modal-dialog modal-xl">
-          <div className="modal-content ">
-            <div className="header text-center">
-              <h1 className="card-title">{stateMoreDetails[0].team_name}</h1>              
-              <h5>Entrenador</h5>
-              {stateMoreDetails[0].manager}
-            </div> 
-            <div className="modal-body">
-              <BtnClose handleReset={handleReset}/> <hr/>
-              {
-                players < 1 ? <Spinner />
-                  : <Table information={players} />
-              }
-            </div>            
+      {
+          players.length < 1 ? <Spinner></Spinner>
+          : <div className="row justify-content-center p-2 animate__animated animate__fadeIn">
+            {
+              players.map(player =>
+                <CardPlayer key={player.player_key}
+                  player={player} />
+              )
+            }
           </div>
-        </div>
-      </div>
+      }
     </div>
   )
 }
