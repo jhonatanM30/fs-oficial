@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import '../css/styles.css'
 import { Link } from 'react-router-dom';
+import { TeamContext } from '../context/TeamContext';
 
 
 
-const ListTeamItem = ({ team, dataTeamEdit, setdataTeamEdit, stateMoreDetails, setstateMoreDetails }) => {
+const ListTeamItem = ({ team }) => {
+  const {setdataTeamEdit, dataTeamEdit} = useContext(TeamContext);
+
   let typeLogo = team.team_logo.substr(-4)
   return (
     <div className="col-12 col-sm-6 col-lg-4 mt-1">

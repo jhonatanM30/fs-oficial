@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Fragment } from "react";
+import { TeamContext } from "../context/TeamContext";
 import { openModal } from '../helpers/modal';
 
 const initialFormTeam = {
@@ -9,8 +10,11 @@ const initialFormTeam = {
   manager: "",
 };
 
-export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit }) => {
+export const FormTeam = () => {
+ 
   const [formTeamState, setformTeamState] = useState(initialFormTeam)
+  
+  const {dataTeamEdit, createTeam, updateTeam} = useContext(TeamContext);
 
   useEffect(() => {
     if(dataTeamEdit[0]){
@@ -43,8 +47,7 @@ export const FormTeam = ({ createTeam, updateTeam, dataTeamEdit, setdataTeamEdit
   };
 
   const handleReset = () => {      
-    setformTeamState(initialFormTeam);
-    setdataTeamEdit([null, false])
+    setformTeamState(initialFormTeam);    
   };
 
   return (
