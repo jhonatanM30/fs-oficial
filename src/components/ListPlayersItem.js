@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { PlayerListContext } from '../context/PlayerContext';
 import '../css/listPlayers.css'
 
-const ListPlayersItem = ({ player, setdataToEdit, deleteData, dataToEdit }) => {    
+const ListPlayersItem = ({ player }) => {    
+   
+    const {setdataToEdit, deleteData, dataToEdit} = useContext(PlayerListContext);
+
     return (
         <div className="container-card-item">                              
             <div className="card">                

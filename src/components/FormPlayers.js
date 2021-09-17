@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { PlayerFormContext } from '../context/PlayerContext';
 import '../css/form.css'
 import { openModal } from '../helpers/modal';
 
@@ -18,9 +19,11 @@ const initialForm = {
   player_red_cards: '',
 }
 
-export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit }) => {
+export const FormPlayers = () => {
 
-  const [formState, setFormState] = useState(initialForm);
+const {createData, updateData, dataToEdit} = useContext(PlayerFormContext);
+  
+const [formState, setFormState] = useState(initialForm);
 
   useEffect(() => {
     if (dataToEdit[0]) {            
@@ -55,8 +58,7 @@ export const FormPlayers = ({ createData, updateData, dataToEdit, setdataToEdit 
   };
 
   const handleReset = () => {
-    setFormState(initialForm);  
-    setdataToEdit([null, false])
+    setFormState(initialForm);    
   }
 
  

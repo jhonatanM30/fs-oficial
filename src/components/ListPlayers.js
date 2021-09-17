@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ListPlayersItem from './ListPlayersItem';
 import '../css/listPlayers.css'
 import Spinner from '../helpers/Spinner';
+import { PlayerListContext } from '../context/PlayerContext';
 
-export const ListPlayers = ({ data, setdataToEdit, deleteData, dataToEdit }) => {  
+export const ListPlayers = () => { 
+        
+    const {dataPlayer} = useContext(PlayerListContext);
+
     return (
         <div className="cards">            
              <div className="ban-title">Lista de Jugadores</div>
             {                
-                data.length < 1 ?
+                dataPlayer.length < 1 ?
                     <Spinner></Spinner>
-                    : data.map(player =>
+                    : dataPlayer.map(player =>
                         <ListPlayersItem
                             key={player.id}
-                            player={player}
-                            setdataToEdit={setdataToEdit}
-                            deleteData={deleteData}
-                            dataToEdit={dataToEdit}
+                            player={player}                           
                         />
                     )
             }
