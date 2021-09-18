@@ -1,60 +1,51 @@
-import psg from '../common/images/psg.jpg'
-import adriano from '../common/images/adriano.jpg'
-import falcao from '../common/images/falcao.jpg'
-import galacticos from '../common/images/galacticos.jpg'
-import cr7 from '../common/images/cr7.jpg'
-import maradona from '../common/images/maradona.jpg'
-import mbape from '../common/images/mbape.jpg'
-import messi from '../common/images/messi.jpg'
-import pirlo from '../common/images/pirlo.jpg'
-import zidane from '../common/images/zidane-zambrano.jpg'
+const playerImages = require.context('../asset/images');
 
 export const getImgGalery = () =>{
     
     const galery = [
         {
             id: "1",           
-            img: psg          
+            img: playerImages(`./psg.jpg`).default          
         }, 
         {
             id: "2",           
-            img: adriano          
+            img: playerImages(`./adriano.jpg`).default             
         }, 
         {
             id: "3",           
-            img: falcao          
+            img: playerImages(`./falcao.jpg`).default             
         }, 
         {
             id: "4",           
-            img: galacticos          
+            img: playerImages(`./galacticos.jpg`).default             
         }, 
         
         {
             id: "5",           
-            img: maradona          
+            img: playerImages(`./cr7.jpg`).default             
         },
 
         {
             id: "6",           
-            img: cr7          
+            img: playerImages(`./maradona.jpg`).default             
         },
 
         {
             id: "7",           
-            img: mbape          
+            img: playerImages(`./mbape.jpg`).default             
         },
 
         {
             id: "8",           
-            img: messi          
+            img: playerImages(`./messi.jpg`).default             
         },
         {
             id: "9",           
-            img: pirlo          
+            img: playerImages(`./pirlo.jpg`).default             
         },
         {
             id: "10",           
-            img: zidane          
+            img: playerImages(`./zidane-zambrano.jpg`).default             
         },    
     ]
 
