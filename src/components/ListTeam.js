@@ -10,7 +10,7 @@ export const ListTeam = () => {
   return (
     <Fragment>
       <div className="ban-title mx-auto">Lista de Equipos</div>
-      <div className="row">
+      <div className="row justify-content-center">
         {
           dataTeam.length < 1 ? <Spinner></Spinner>
             : dataTeam.map(team =>

@@ -13,8 +13,8 @@ export const AppRouter = () => {
         <Router>
             <Fragment>
                 <Switch >
-                    <Route exact path="/home" component={Home} />
-                    <Route path="/" component={DashBoardRouter}/>
+                    <Route exact path="/home" component={Home} />                    
+                    <Route path="/" component={DashBoardRouter} />                    
                 </Switch>
             </Fragment>
         </Router>

@@ -51,7 +51,7 @@ const ListPlayersItem = ({ player }) => {
                     <i className="fas fa-edit"></i> Editar
                     </button>
                     <button onClick={() => deleteData(player.id)}> 
-                    <i class="fas fa-trash-alt"></i> Eliminar
+                    <i className="fas fa-trash-alt"></i> Eliminar
                     </button>
                 </div>
             </div>

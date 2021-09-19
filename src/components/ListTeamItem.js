@@ -10,7 +10,7 @@ const ListTeamItem = ({ team }) => {
 
   let typeLogo = team.team_logo.substr(-4)
   return (
-    <div className="col-12 col-sm-6 col-lg-4 mt-1">
+    <div className="col-12 col-sm-10 col-lg-4 mt-1">
       <div className="card text-center">
         <div className="card-header">
           {

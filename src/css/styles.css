@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-.cont-team, .cont-player, .cont-matchs, .cont-carousel, .cont-galery{
-  padding: 1rem;
-  margin-top: 5rem;
-}
-
-.cont-home{
-  padding: 1rem;
-  margin-top: 10rem;
-}
 
 .buttonUD {
   display: inline-block;
@@ -33,137 +24,39 @@
   transition: 0.5s;  
 }
 
-
-
 .cont-home {
   text-align: center;
-  background-color: #9bdc28;
-  z-index: 20000;
+  background-color: #9bdc28;  
   background: #050505;
-  opacity: 0.6;
-  border-radius: 20px;  
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 10px #000;    
+  margin: 5rem;  
+  margin-top: 5rem; 
 }
 
-.row .titleHome {
-  font-size: 50px;
-  margin: -20px 0 20px;
+.cont-home .titleHome {
   color: #9bdc28;
- 
+  margin-top: 1rem;
 }
 
-.row .titleHome:hover { 
+.cont-home .titleHome:hover { 
   color: #ffffff;
 }
 
-.row .decription {
+.cont-home .decription {
   font-size: 20px;
   letter-spacing: 1px;
   color: rgb(255, 255, 255);
+  margin-top: 1rem;
 }
 
-
-@keyframes myAnim {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translateY(-8px);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: translateY(8px);
-  }
-
-  80% {
-    transform: translateY(6.4px);
-  }
-
-  90% {
-    transform: translateY(-6.4px);
-  }
-}
-
-.container .titleHome2{
+.cont-home .titleHome2{
   color: #ffffff;
-  font-size: 50px;
+  margin-top: 1rem;
 }
-.container .titleHome2:hover{
+.cont-home .titleHome2:hover{
   color:  #9bdc28;
   transition: 0.5s;
-}
-
-
-.table thead {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 166, 0);
-  text-align: center;
-  font-size: 15px;
-  vertical-align: middle;
-  position: sticky;
-  top: 0px;
-}
-
-.table td {
-  color: rgb(0, 0, 0);
-  border-color: rgb(255, 166, 0);
-  text-align: center;
-  vertical-align: middle;
-  font-size: 15px;
-}
-
-.conten-table{
-  height: 20rem;
-  width: 100%;
-  overflow-y: auto;
-  border: 0.2rem solid;
-}
-
-.close-table{
-  font-size: 2rem;
-  vertical-align: middle;
-  animation: myAnim 3s ease-in 0s infinite alternate forwards;
-}
-@keyframes myAnim {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateX(10px);
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  40% {
-    animation-timing-function: ease-in;   
-    transform: translateX(6px);
-  }
-
-  60% {
-    animation-timing-function: ease-in;   
-    transform: translateX(4px);    
-  }
-  25%,
-  55%,
-  75%,
-  87%,
-  98% {
-    animation-timing-function: ease-out;
-    transform: translateX(0px);
-  }
-
-  100% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateX(0px);
-  }
 }
 
 .card-header{
@@ -299,5 +192,13 @@
 
   .card-img{
     height: 45vh;
+  }
+
+  .cont-home .decription{
+    font-size: 15px;
+  }
+
+  .cont-home .titleHome, .cont-home .titleHome2{
+    font-size: 20px;
   }
 }

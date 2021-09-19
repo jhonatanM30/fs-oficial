@@ -20,7 +20,8 @@ import { InformationTeam } from './InformationTeam';
 export const DashBoardRouter = () => {
     return (
         <div className="main-container">
-            <Nav></Nav>
+            <Nav />
+            <div className="container mt-5">
                 <Switch>
                     <Route exact path="/home">
                         <Home />
@@ -40,8 +41,10 @@ export const DashBoardRouter = () => {
                     </Route>
                     <Redirect to="/home" />
                 </Switch>
-                <Footer></Footer>
+            </div>
+            <Footer></Footer>
         </div>
+
 
     )
 }

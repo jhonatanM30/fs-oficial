@@ -36,7 +36,6 @@ export const Team = () => {
   };
 
   return (
-    <div className="container cont-team">
       <TeamContext.Provider
         value={{
           dataTeam,
@@ -51,6 +50,5 @@ export const Team = () => {
         <FormTeam />
         <ListTeam />
       </TeamContext.Provider>
-    </div>
   );
 };
