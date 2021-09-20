@@ -7,7 +7,7 @@ import Spinner from "../helpers/Spinner";
 export const MatchesList = ({ stateMatches }) => {
     let stateFirstCarousel = 0;
     return (
-        <div id="carouselExampleCaptions" className="carousel slide container" data-bs-interval="false">
+        <div id="carouselExampleCaptions" className="carousel slide mt-2" data-bs-interval="false">
             <div className="carousel-inner content-item-carousel pt-5">
                 <div className="d-flex justify-content-center">
                     <h1 className="title-slide">Resumen del partido</h1>

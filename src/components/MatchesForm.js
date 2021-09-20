@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
-export const MatchesForm = ({ setstateDate, stateDate }) => {
-  const [formDate, setformDate] = useState(stateDate);
+const dateInitial = {
+  since: new Date().toISOString().slice(0, 10),
+  until: new Date().toISOString().slice(0, 10),
+}
+
+export const MatchesForm = ({ setstateDate }) => {
+  const [formDate, setformDate] = useState(dateInitial);
 
   const handleChange = (e) => {
     setformDate({
@@ -13,57 +18,54 @@ export const MatchesForm = ({ setstateDate, stateDate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formDate.since > formDate.until) {
-      alert("La fecha desde la cual quieres buscar no puede ser mayor a la fecha final que buscas, Verifica!");      
+      alert("La fecha desde la cual quieres buscar no puede ser mayor a la fecha final que buscas, Verifica!");
       return;
     } else {
-      setstateDate(formDate);      
+      setstateDate(formDate);
     }
   };
 
   const handleReset = () => {
-    setformDate(stateDate);
+    setformDate(dateInitial);
+    setstateDate(dateInitial);
   };
 
   return (
-    <div className="container cont-matchs">
+    <div>
       <form action="#" className="form-date">
-        <div className="panel panel-default">
-          <div className="panel-heading">
-            <div className="row d-flex">
-              <div className="col-6  col-sm-6 col-md-4">
-                <label htmlFor="since" className="form-label">
-                  Desde el día.
-                </label>
-                <input
-                  type="date"
-                  name="since"
-                  className="form-control"
-                  value={formDate.since}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="col-6 col-sm-6 col-md-4">
-                <label htmlFor="until" className="form-label">
-                  Hasta el día.
-                </label>
-                <input
-                  type="date"
-                  name="until"
-                  className="form-control"
-                  value={formDate.until}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
-            <div className="row d-inline-flex">
-              <div className="btn-group" role="group" aria-label="Basic mixed styles example">
+        <div className="row panel-heading">
+          <div className="col-12 col-sm-6 col-lg-3">
+            <label htmlFor="since" className="form-label">
+              Desde el día.
+            </label>
+            <input
+              type="date"
+              name="since"
+              className="form-control"
+              value={formDate.since}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="col-12 col-sm-6 col-lg-3">
+            <label htmlFor="until" className="form-label">
+              Hasta el día.
+            </label>
+            <input
+              type="date"
+              name="until"
+              className="form-control"
+              value={formDate.until}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="col-12 col-sm-12 col-lg-12 mt-2">
+            <div className="btn-group" role="group">
               <button type="button" className="btn btn-primary" onClick={handleSubmit}>
-                  <i className="fas fa-calendar-check"></i> confirmar fecha
-                </button>
-                <button type="button" className="btn btn-secondary" onClick={handleReset}>
-                <i className="fas fa-spinner"></i> Restablecer a fecha actual
-                </button>
-              </div>              
+                <i className="fas fa-calendar-check"></i> Buscar
+              </button>
+              <button type="button" className="btn btn-secondary" onClick={handleReset}>
+                <i className="fas fa-spinner"></i> Restablecer
+              </button>
             </div>
           </div>
         </div>

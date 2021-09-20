@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { Fragment } from 'react';
 import { helpHttp } from '../helpers/helpHttp';
 import { MatchesForm } from './MatchesForm';
 import { MatchesList } from './MatchesList';
 
-const dateInitial = {
-    since: new Date().toISOString().slice(0, 10),
-    until: new Date().toISOString().slice(0, 10),
-}
+
 
 export const Matches = () => {
 
     const [stateMatches, setstateMatches] = useState([])
 
-    const [stateDate, setstateDate] = useState(dateInitial)
+    const [stateDate, setstateDate] = useState({})
 
 
     let apiKey = '6dd30bcfa05531435924005166a0ba3499563d457e3fc312a37ad2681138866f'

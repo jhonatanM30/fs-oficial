@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { PlayerFormContext } from '../context/PlayerContext';
-import '../css/form.css'
 import { openModal } from '../helpers/modal';
 
 

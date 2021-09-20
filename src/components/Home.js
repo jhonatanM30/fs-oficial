@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/home.css";
 import { useHistory } from "react-router-dom";
 
 export const Home = () => {
